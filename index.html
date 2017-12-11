@@ -17,7 +17,10 @@
     <meta name="copyright" content="Information om copyright">
 
     <!-- Sikrer man kan benytte CSS ved at tilkoble en CSS fil -->
+    <link rel="stylesheet" href="css/hamburgers.css">
     <link href="css/styles.css" rel="stylesheet" type="text/css">
+
+    <script src="script.js"></script>
 
     <!-- Sikrer den vises korrekt på mobil, tablet mv. ved at tage ift. skærmstørrelse -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -26,10 +29,71 @@
 
 <!-- i <body> har man alt indhold på siden -->
 <body>
+<!--- Menu Overlay ----->
+
+<div id="myNav" class="overlay">
+
+    <!-- Button to close the overlay navigation -->
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+
+    <!-- Overlay content -->
+    <div class="overlay-content">
+        <a href="#">FORSIDE</a>
+        <a href="#">TOBIAS TRADS</a>
+        <a href="#">AMALIE VON SCHRAM</a>
+        <a href="#">FREDERIK WOLMER</a>
+        <a href="#">KONTAKT</a>
+    </div>
+
+</div>
+
+
 <!--- HEADER ------->
-<div class="grid header forside"></div>
+<div class="grid header forside">
+
+    <!-- Use any element to open/show the overlay navigation menu -->
+
+
+    <button class="hamburger hamburger--collapse" type="button" >
+        <span class="hamburger-box">
+        <span class="hamburger-inner"></span>
+        </span>
+    </button>
+
+
+    <script>
+        // Look for .hamburger
+        var hamburger = document.querySelector(".hamburger");
+
+
+        // On click
+
+        hamburger.addEventListener("click", function() {
+            // Toggle class "is-active"
+
+            hamburger.classList.toggle("is-active");
+
+            // Do something else, like open/close menu
+            document.getElementById("myNav").style.width = "100%";
+
+
+        });
+
+
+    </script>
+
+    <div class="logo">
+
+    </div>
+
+</div>
 
 <!--- Et kollektiv------->
+<div class="grid kollektiv">
+
+    <h1>ET KOLLEKTIV</h1>
+
+</div>
 
 <!--- Tobias ------->
 

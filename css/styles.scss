@@ -38,29 +38,11 @@ $color-pink: #ebb3df;
 }
 
 //knap
- .ghost-button {
-  color: #f6f7fd;
-  border: 5px solid #fdfdfd;
-  font-size: 17px;
-  padding: 7px 12px;
-  font-weight: normal;
-  margin: 6px 0;
-  margin-right: 12px;
-  display: inline-block;
-  text-decoration: none;
-  font-family: 'Open Sans', sans-serif;
-  min-width: 120px;
- }
- .ghost-button:hover, .ghost-button:active {
-  color:#fff;
-
- }
+.knap {
+   border: 5px solid #fdfdfd;
+}
 
  .knapFyld {
-
-
-
-
    background-color: $color-yellow;
    display: inline;
  }

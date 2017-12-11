@@ -1,0 +1,262 @@
+
+//Alle sektioner indledes med
+
+/*================"Sektion Navn"================*/
+
+
+
+//her er alle de ting der ikke passer andre steder.
+/*================GENERELT================*/
+@font-face { //Definere fonten odin, så vi kan bruge den
+  font-family: odin;
+  src: url('odin.otf');
+}
+
+body {
+  margin: 0; // Ingen kanter i siden af browser
+  font-family: Arial;
+  color: white;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0; // Ingen ydre margen fra overskrifter
+  padding: 50px; // Ingen indre margen fra overskrifter
+  text-align: center;
+  font-family: odin;
+  letter-spacing: 5px;
+}
+p {
+  margin: 0; // Ingen ydre margen fra paragraffer
+  padding: 0; // Ingen indre margen fra paragraffer
+}
+
+// Sikrer billeder er responsive
+img {
+  display: block; // Billeder er et element (laver linjeskift)
+  max-width: 100%; // Bredde mÂ maks fylde 100%
+  height: auto; // H¯jden skal tilpasse sig
+}
+
+//Farve variabler
+$color-yellow: #f7d888;
+$color-blue: #ace9e3;
+$color-pink: #ebb3df;
+
+//12 column grid
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: auto;
+}
+
+//dropshadows
+.dropshadow {
+  box-shadow: -18px 18px 41px -18px rgba(0,0,0,0.28);
+}
+
+/*================knappen================*/
+
+//knappen, som er virkelig dårlig lavet, men den virker
+//har givet den en sektion for sig selc
+
+.flex{ //laver flex så knappen kan centreres
+  display: flex;
+  justify-content: center;
+}
+
+.knapTekst{ // gør at teksten er hvis og centreret.
+  text-decoration: none;
+  color: white;
+  justify-content: center;
+  margin-top: 10px;
+
+}
+
+.knap { //her defineres knappens størrelse
+  position: absolute;
+  justify-content: center;
+  width: 80px;
+  height: 40px;
+}
+
+.knapFyld { //knappe fyldet.
+  position: absolute; // gør at elementerne kan stackes
+  background-color: $color-yellow;
+  width: 85px; //størrelse
+  height: 45px; //størrelse
+  left: 10px; //forskydes til venstre
+  top: 10px; //forskydes ned
+}
+
+.knapKant {//Denne del af knappen er lidt rodet
+  position: absolute;
+  justify-content: center;
+  border: 5px solid #fdfdfd; //kanten laves, farve + tykkelse
+  width: 80px; //størrelse
+  height: 40px;
+  z-index: 4; //tror faktisk ikke det gør noget
+  right: 10px; // kanten placeres i forhold til .knapfyld og skal derfor forskydes tilbage på sin plads
+  bottom: 10px; // det samme sker her
+  display: flex; // ved ikke hvorfor der er flex her
+}
+
+/*================HEADER===============*/
+
+.header { //farve og længde på header sektionen
+  background-color: $color-yellow;
+  height: 400px;
+  background-image: none; // her skal der være et billede
+  background-size: cover; //fylder headeren ud
+}
+
+.logo { // placeholder for logoet
+  height: 300px;
+  width: 300px;
+  border: solid white 6px;
+  position: relative;
+  top: 62%;
+  margin: auto
+
+}
+
+/*================kollektiv===============*/
+
+.kollektiv h1 { //placering af header
+  grid-column: 1/13; // den placeres mellem linje 1 og 13
+}
+
+.kollektiv {
+  background-color: $color-blue;
+  padding-top: 250px; //giver lidt plads til billedet... eller er det header? i dont know
+}
+
+.kollektiv img {
+  grid-column: 3 / 11; //placering af billedet
+  margin: auto; // centrer billedet
+}
+
+.kollektiv p { //placering af tekst
+  grid-column: 3 / 11;
+  padding: 100px;
+  text-align: center;
+
+}
+
+/*================KONTRAST==============*/
+
+.kontrastBG {
+  background-color: $color-pink;
+}
+
+.kontrast {
+  height: 500px; //højden på sektionen, skal slettes nå der kommer indhold
+  background-color: $color-yellow;
+  clip-path: polygon(0 0, 100% 0, 100% 85%, 0% 100%); // giver den skrå kant
+}
+/*================footer===============*/
+
+.footer {
+  height: 500px;
+  background-color: $color-pink;
+}
+
+
+
+
+/*================Responsivitet===============*/
+
+
+@media screen and (min-width: 768px) {
+  // Alt der Êndres i tablet stÂende fra mobil
+}
+
+@media screen and (min-width: 992px) {
+  // Alt der Êndres i tablet liggende fra mobil og tablet stÂende
+}
+
+@media screen and (min-width: 1200px) {
+  // Alt der Êndres i computer fra mobil, tablet stÂende og tablet liggende
+}
+
+@media print {
+  // Alt der gÊlder for print specifikt
+}
+
+
+
+
+
+
+/*=====BURGER MENU=====*/
+// den ligger i bunden fordi den fylder meget, og ikke skal ændres på :)
+
+.hamburger{
+  z-index: 2;
+  position: fixed;
+  top: 20px;
+  right: 45px;
+}
+
+/* The Overlay (background) */
+.overlay {
+  /* Height & width depends on how you want to reveal the overlay (see JS below) */
+  height: 100%;
+  width: 0;
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  background-color: rgb(0,0,0); /* Black fallback color */
+  background-color: rgba(247, 216, 136, 0.9); /* Black w/opacity */
+  overflow-x: hidden; /* Disable horizontal scroll */
+  transition: 0.5s; /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
+}
+
+/* Position the content inside the overlay */
+.overlay-content {
+  position: relative;
+  top: 25%; /* 25% from the top */
+  width: 100%; /* 100% width */
+  text-align: center; /* Centered text/links */
+  margin-top: 30px; /* 30px top margin to avoid conflict with the close button on smaller screens */
+}
+
+/* The navigation links inside the overlay */
+.overlay a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 22px;
+  color: #f6f7fd;
+  display: block; /* Display block instead of inline */
+  transition: 0.3s; /* Transition effects on hover (color) */
+  font-family: odin;
+  letter-spacing: 5px;
+}
+
+/* When you mouse over the navigation links, change their color */
+.overlay a:hover, .overlay a:focus {
+  color: #f1f1f1;
+}
+
+/* Position the close button (top right corner) */
+.overlay .closebtn {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
+
+}
+
+  /* When the height of the screen is less than 450 pixels, change the font-size of the links and position the close button again, so they don't overlap */
+  @media screen and (max-height: 450px) {
+    .overlay a {
+      font-size: 20px
+    }
+    .overlay .closebtn {
+      font-size: 40px;
+      top: 15px;
+      right: 35px;
+    }
+  }
+
+

@@ -12,7 +12,7 @@ body {
 
 h1, h2, h3, h4, h5, h6 {
   margin: 0; // Ingen ydre margen fra overskrifter
-  padding: 0; // Ingen indre margen fra overskrifter
+  padding: 50px; // Ingen indre margen fra overskrifter
   text-align: center;
   font-family: odin;
   letter-spacing: 5px;
@@ -36,24 +36,58 @@ $color-pink: #ebb3df;
 
 //12 column grid
 .grid {
-  grid-template-columns: repeat(12, 1fr);
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr ;
 }
 
 //knap
-.knap {
-   border: 5px solid #fdfdfd;
-  width: 200px;
+
+.flex{
+  display: flex;
+  justify-content: center;
+}
+
+.knapTekst{
+  text-decoration: none;
+  color: white;
+  justify-content: center;
+ margin-top: 10px;
 
 }
 
- .knapFyld {
+.knapKant {
 
-   background-color: $color-yellow;
-   display: inline;
-   height: 100%;
-   width: 100%;
- }
+  position: absolute;
+  justify-content: center;
 
+  width: 80px;
+  height: 40px;
+  z-index: 4;
+}
+
+.knapFyld {
+
+  position: absolute;
+  background-color: $color-yellow;
+  width: 85px;
+  height: 45px;
+  left: 10px;
+  top: 10px;
+
+}
+
+.knapKant2 {
+
+  position: absolute;
+  justify-content: center;
+  border: 5px solid #fdfdfd;
+  width: 80px;
+  height: 40px;
+  z-index: 4;
+  right: 10px;
+  bottom: 10px;
+  display: flex;
+
+}
 
 /*=====HEADER====*/
 .header {
@@ -94,7 +128,7 @@ $color-pink: #ebb3df;
 /*=====footer====*/
 
 .footer {
-  height: 100px;
+  height: 500px;
   background-color: $color-pink;
 }
 
@@ -191,12 +225,16 @@ $color-pink: #ebb3df;
   font-size: 60px;
 }
 
-/* When the height of the screen is less than 450 pixels, change the font-size of the links and position the close button again, so they don't overlap */
-@media screen and (max-height: 450px) {
-  .overlay a {font-size: 20px}
-  .overlay .closebtn {
-    font-size: 40px;
-    top: 15px;
-    right: 35px;
+  /* When the height of the screen is less than 450 pixels, change the font-size of the links and position the close button again, so they don't overlap */
+  @media screen and (max-height: 450px) {
+    .overlay a {
+      font-size: 20px
+    }
+    .overlay .closebtn {
+      font-size: 40px;
+      top: 15px;
+      right: 35px;
+    }
   }
-}
+
+

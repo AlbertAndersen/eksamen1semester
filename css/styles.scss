@@ -1,6 +1,7 @@
 /*=====GENERELT=====*/
-
-@font-face { font-family: "Odin Rounded"; src: url("."); }
+@font-face {
+  font-family: odin;
+  src: url('odin.otf'); }
 body {
   margin: 0; // Ingen kanter i siden af browser
   font-family: Arial;
@@ -11,6 +12,8 @@ h1, h2, h3, h4, h5, h6 {
   margin: 0; // Ingen ydre margen fra overskrifter
   padding: 0; // Ingen indre margen fra overskrifter
   text-align: center;
+  font-family: odin;
+  letter-spacing: 5px;
 }
 p {
   margin: 0; // Ingen ydre margen fra paragraffer
@@ -33,6 +36,9 @@ $color-pink: #ebb3df;
 .grid {
   grid-template-columns: repeat(12, 1fr);
 }
+
+//knap
+
 
 /*=====HEADER====*/
 .header {
@@ -59,6 +65,23 @@ $color-pink: #ebb3df;
   padding-top: 250px;
 }
 
+/*=====kollektiv====*/
+.kontrastBG {
+  background-color: $color-pink;
+}
+
+.kontrast {
+  height: 500px;
+  background-color: $color-yellow;
+  clip-path: polygon(0 0, 100% 0, 100% 85%, 0% 100%);
+}
+
+/*=====footer====*/
+
+.footer {
+  height: 100px;
+  background-color: $color-pink;
+}
 
 
 /* When the height of the screen is less than 450 pixels, change the font-size of the links and position the close button again, so they don't overlap */

@@ -29,14 +29,12 @@
 
 <!-- i <body> har man alt indhold på siden -->
 <body>
-<!--- Menu Overlay ----->
+
+<!--- Menu Overlay. Dette er skjult indtil man aktivere det med javascript ----->
 
 <div id="myNav" class="overlay">
 
-    <!-- Button to close the overlay navigation -->
-    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-
-    <!-- Overlay content -->
+    <!-- Overlay content. De links der kommer frem -->
     <div class="overlay-content">
         <a href="#">FORSIDE</a>
         <a href="#">TOBIAS TRADS</a>
@@ -49,39 +47,43 @@
 
 
 <!--- HEADER ------->
-<div class="grid header forside">
+<div class="header forside">
 
-    <!-- Use any element to open/show the overlay navigation menu -->
-
-
+    <!-- Det her er knappen der åbner og lukker menuen. -->
     <button class="hamburger hamburger--collapse" type="button" >
         <span class="hamburger-box">
         <span class="hamburger-inner"></span>
         </span>
     </button>
 
-
+    <!-- her er javascript der åbner og lukker menuen -->
     <script>
-        // Look for .hamburger
+        // leder efter noget med klassen .hamburger
         var hamburger = document.querySelector(".hamburger");
 
-
-        // On click
-
+        // gør at der sker noget når man klikker på .hamburger
         hamburger.addEventListener("click", function() {
-            // Toggle class "is-active"
 
+            //her er et if else statement
+
+            //hvis .hamburger har klassen is-active sættes værdien på overlay width til 0%
+            if (hamburger.classList.contains("is-active")) {
+                document.getElementById("myNav").style.width = "0%";
+                //ellers sættes værdien til 100%
+            } else {
+                document.getElementById("myNav").style.width = "100%";
+            }
+            //skifter mellem at knappen med .hamburger har klassen "is-active"
             hamburger.classList.toggle("is-active");
-
-            // Do something else, like open/close menu
-            document.getElementById("myNav").style.width = "100%";
 
 
         });
 
 
+
     </script>
 
+    <!-- Her er en div som jeg har givet en width, height og boarder. så den kan bruges som placeholder -->
     <div class="logo">
 
     </div>
@@ -93,7 +95,9 @@
 
     <h1>ET KOLLEKTIV</h1>
 
-    <img src="/images/butik.png" alt="">
+    <img src="images/butikDrop.png" alt="" class="dropshadow">
+
+    <p>Ut bibendum non tellus non volutpat. Nam quis pretium ex. Nulla dapibus pellentesque nisl, at pretium turpis. Mauris sit amet justo sed ante dignissim ultrices. Quisque vitae lacinia massa. In feugiat, mauris id condimentum interdum, magna mauris dapibus odio, pªorttitor vulputate felis arcu at est. Aliquam erat volutpat.</p>
 
 </div>
 
@@ -105,37 +109,45 @@
 
 <!---  Kontrast------->
 
+<!-- Der skal være en background bag .kontrast fordi vi bruger clippath, som viser hvad der ligger bag denne klasse-->
 <div class="kontrastBG">
-<div class="kontrast">
 
-</div>
+    <div class="kontrast">
+
+    </div>
+
 </div>
 
 <!--- Kontaktform & footer------->
 
 
-<div class="grid footer forside">
+<div class="footer forside">
     <h1>KONTAKT OS</h1>
-<div class="flex">
 
+    <!--- Denne knap var mega svær at lave.... Men den virker nu, og det er det vigtigeste---->
+    <!--- Klassen flex er for at centrere --->
+    <div class="flex">
 
-           <div class="knapKant">
+            <!--- knappen laves her -->
+           <div class="knap">
 
-
-
-
+               <!--- Fyldes laves her, som så bliver forskudt i forhold til kanten -->
                <div class="knapFyld">
 
-                   <div class="knapKant2">
-                       <a href="#" class="knapTekst">SEND</a>
+                   <!--- Her lavesen kant, fordi ellers ligger fyldet ovenpå kanten -->
+                   <div class="knapKant">
+
+                       <!--- Her er selve knappen --->
+                       <a href="#" class="knapTekst">SEND
+
                    </div>
 
                </div>
 
            </div>
 
-        </div>
-</div>
+
+    </div>
 </div>
 
 

@@ -1,5 +1,13 @@
-/*=====GENERELT=====*/
-@font-face {
+
+//Alle sektioner indledes med
+
+/*================"Sektion Navn"================*/
+
+
+
+//her er alle de ting der ikke passer andre steder.
+/*================GENERELT================*/
+@font-face { //Definere fonten odin, så vi kan bruge den
   font-family: odin;
   src: url('odin.otf');
 }
@@ -36,67 +44,72 @@ $color-pink: #ebb3df;
 
 //12 column grid
 .grid {
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr ;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: auto;
 }
 
-//knap
+//dropshadows
+.dropshadow {
+  box-shadow: -18px 18px 41px -18px rgba(0,0,0,0.28);
+}
 
-.flex{
+/*================knappen================*/
+
+//knappen, som er virkelig dårlig lavet, men den virker
+//har givet den en sektion for sig selc
+
+.flex{ //laver flex så knappen kan centreres
   display: flex;
   justify-content: center;
 }
 
-.knapTekst{
+.knapTekst{ // gør at teksten er hvis og centreret.
   text-decoration: none;
   color: white;
   justify-content: center;
- margin-top: 10px;
+  margin-top: 10px;
 
 }
 
-.knapKant {
-
+.knap { //her defineres knappens størrelse
   position: absolute;
   justify-content: center;
-
   width: 80px;
   height: 40px;
-  z-index: 4;
 }
 
-.knapFyld {
-
-  position: absolute;
+.knapFyld { //knappe fyldet.
+  position: absolute; // gør at elementerne kan stackes
   background-color: $color-yellow;
-  width: 85px;
-  height: 45px;
-  left: 10px;
-  top: 10px;
-
+  width: 85px; //størrelse
+  height: 45px; //størrelse
+  left: 10px; //forskydes til venstre
+  top: 10px; //forskydes ned
 }
 
-.knapKant2 {
-
+.knapKant {//Denne del af knappen er lidt rodet
   position: absolute;
   justify-content: center;
-  border: 5px solid #fdfdfd;
-  width: 80px;
+  border: 5px solid #fdfdfd; //kanten laves, farve + tykkelse
+  width: 80px; //størrelse
   height: 40px;
-  z-index: 4;
-  right: 10px;
-  bottom: 10px;
-  display: flex;
-
+  z-index: 4; //tror faktisk ikke det gør noget
+  right: 10px; // kanten placeres i forhold til .knapfyld og skal derfor forskydes tilbage på sin plads
+  bottom: 10px; // det samme sker her
+  display: flex; // ved ikke hvorfor der er flex her
 }
 
-/*=====HEADER====*/
-.header {
+/*================HEADER===============*/
+
+.header { //farve og længde på header sektionen
   background-color: $color-yellow;
   height: 400px;
+  background-image: none; // her skal der være et billede
+  background-size: cover; //fylder headeren ud
 }
 
-.logo {
-  grid-column-start: 3;
+.logo { // placeholder for logoet
   height: 300px;
   width: 300px;
   border: solid white 6px;
@@ -106,26 +119,41 @@ $color-pink: #ebb3df;
 
 }
 
-/*=====kollektiv====*/
+/*================kollektiv===============*/
+
+.kollektiv h1 { //placering af header
+  grid-column: 1/13; // den placeres mellem linje 1 og 13
+}
 
 .kollektiv {
   background-color: $color-blue;
-  height: 500px;
-  padding-top: 250px;
+  padding-top: 250px; //giver lidt plads til billedet... eller er det header? i dont know
 }
 
-/*=====kollektiv====*/
+.kollektiv img {
+  grid-column: 3 / 11; //placering af billedet
+  margin: auto; // centrer billedet
+}
+
+.kollektiv p { //placering af tekst
+  grid-column: 3 / 11;
+  padding: 100px;
+  text-align: center;
+
+}
+
+/*================KONTRAST==============*/
+
 .kontrastBG {
   background-color: $color-pink;
 }
 
 .kontrast {
-  height: 500px;
+  height: 500px; //højden på sektionen, skal slettes nå der kommer indhold
   background-color: $color-yellow;
-  clip-path: polygon(0 0, 100% 0, 100% 85%, 0% 100%);
+  clip-path: polygon(0 0, 100% 0, 100% 85%, 0% 100%); // giver den skrå kant
 }
-
-/*=====footer====*/
+/*================footer===============*/
 
 .footer {
   height: 500px;
@@ -135,8 +163,7 @@ $color-pink: #ebb3df;
 
 
 
-/*=====FOOTER=====*/
-
+/*================Responsivitet===============*/
 
 
 @media screen and (min-width: 768px) {
@@ -160,16 +187,8 @@ $color-pink: #ebb3df;
 
 
 
-
-
-
-
-
-
-
-
-
 /*=====BURGER MENU=====*/
+// den ligger i bunden fordi den fylder meget, og ikke skal ændres på :)
 
 .hamburger{
   z-index: 2;
@@ -210,6 +229,8 @@ $color-pink: #ebb3df;
   color: #f6f7fd;
   display: block; /* Display block instead of inline */
   transition: 0.3s; /* Transition effects on hover (color) */
+  font-family: odin;
+  letter-spacing: 5px;
 }
 
 /* When you mouse over the navigation links, change their color */
@@ -223,6 +244,7 @@ $color-pink: #ebb3df;
   top: 20px;
   right: 45px;
   font-size: 60px;
+
 }
 
   /* When the height of the screen is less than 450 pixels, change the font-size of the links and position the close button again, so they don't overlap */

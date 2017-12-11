@@ -39,9 +39,8 @@ $color-pink: #ebb3df;
 
 //knap
  .ghost-button {
-  color: #009688;
-  background: #fff;
-  border: 1px solid #009688;
+  color: #f6f7fd;
+  border: 5px solid #fdfdfd;
   font-size: 17px;
   padding: 7px 12px;
   font-weight: normal;
@@ -51,6 +50,19 @@ $color-pink: #ebb3df;
   text-decoration: none;
   font-family: 'Open Sans', sans-serif;
   min-width: 120px;
+ }
+ .ghost-button:hover, .ghost-button:active {
+  color:#fff;
+
+ }
+
+ .knapFyld {
+
+
+
+
+   background-color: $color-yellow;
+   display: inline;
  }
 
 

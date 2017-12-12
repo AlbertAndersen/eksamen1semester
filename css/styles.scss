@@ -1,10 +1,24 @@
 
-//Alle sektioner indledes med
+//kode opdeling kommentar
 
-/*================"Sektion Navn"================*/
+/*========================================================================
+ ==============================Side====================================
+=========================================================================*/
+
+/*-------------------------------------------------------------------------
+----------------------------------Sektion-----------------------
+---------------------------------------------------------------------------*/
+
+/*================Underdel================*/
+
+
+
+
 
 //her er alle de ting der ikke passer andre steder.
-/*================GENERELT================*/
+/*========================================================================
+ ==============================Generelt====================================
+=========================================================================*/
 @font-face { //Definere fonten odin, så vi kan bruge den
   font-family: odin;
   font-weight: 100;
@@ -23,17 +37,18 @@ h1, h2, h4, h5, h6 {
   padding: 50px; // Ingen indre margen fra overskrifter
   text-align: center;
   font-family: odin;
-  letter-spacing: 5px;
-  text-transform: uppercase;
-  font-weight: 100;
+  letter-spacing: 5px; //samme som tracking i PS
+  text-transform: uppercase; //gør at alle overskrifter er UPPERCASE
+  font-weight: 100; //fikser problem med font vægt nogen steder
 }
 
+// h3 står for sig selv fordi den skal være arial
 h3  {
   font-family: Arial;
   margin: 0;
   text-align: center;
   padding: 30px;
-  font-size: 40;
+  font-size: 40; //40 er ikke den endelige størrelse
 }
 
 p {
@@ -68,7 +83,7 @@ $color-pink: #ebb3df;
 /*================knappen================*/
 
 //knappen, som er virkelig dårlig lavet, men den virker
-//har givet den en sektion for sig selc
+//har givet den en sektion for sig selv
 
 .flex{ //laver flex så knappen kan centreres
   display: flex;
@@ -85,7 +100,6 @@ $color-pink: #ebb3df;
 .knap { //her defineres knappens størrelse
   position: absolute;
   justify-content: center;
-
   margin: 30px 0px;
 }
 
@@ -108,11 +122,33 @@ $color-pink: #ebb3df;
   display: flex; // ved ikke hvorfor der er flex her
 }
 
+/*================knap igen===============*/
+//Ved ikke lige hvorfor det kommer to gange, men det virker kun hvis det gør. Dette skal fixes
+
+.knap { //her defineres knappens størrelse
+  width: 80px;
+  height: 40px;
+}
+
+.knapFyld { //knappe fyldet.
+  width: 85px; //størrelse
+  height: 45px; //størrelse
+}
+
+.knapKant {//Denne del af knappen er lidt rodet
+  width: 80px; //størrelse
+  height: 40px;
+}
+
+/*-------------------------------------------------------------------------
+----------------------------------Header & footer-----------------------
+---------------------------------------------------------------------------*/
+
 /*================HEADER===============*/
 
 .header { //farve og længde på header sektionen
   background-color: $color-yellow;
-  height: 400px;
+  height: 400px; // Højden på headeren. Hvis denne ændres skal .logo { top } også ændres
   background-image: none; // her skal der være et billede
   background-size: cover; //fylder headeren ud
 }
@@ -130,17 +166,19 @@ $color-pink: #ebb3df;
 
 /*================KONTAKT FORM===============*/
 
+//Styling af input fælter
 input {
-  margin: 20px 0px;
-  grid-column: 3/11;
-  border: none;
+  margin: 20px 0px; // Giver lidt plads mellem felter
+  grid-column: 3/11; // placere input felterne i miden
+  border: none; // fjerner kant
   background-color: $color-yellow;
   color: white;
   font-size: 16px;
   height: 30px;
-  box-shadow: -16px 21px 34px 0px rgba(0, 0, 0, 0.1);
+  box-shadow: -16px 21px 34px 0px rgba(0, 0, 0, 0.1); //giver input felter lidt dropshadow
 }
 
+//gør besked feltet større
 input:nth-last-child(1) {
   height: 100px;
 }
@@ -148,6 +186,7 @@ input:nth-last-child(1) {
 
 /*================footer===============*/
 
+//giver lidt plads til send knappen
 .sendknap {
   margin-top: 75px;
 }
@@ -156,6 +195,7 @@ input:nth-last-child(1) {
   background-color: $color-pink;
 }
 
+//Dette er alt kontakt info font styling
 .bund {
   text-align: center;
   margin-top: 120px;
@@ -165,34 +205,22 @@ input:nth-last-child(1) {
   font-weight: 100;
 }
 
+//Sociale medie ikoner
 .some {
   padding: 50px 0;
 }
 
+// gør ordert "eller" mindre og giver det lidt plads
 .eller {
   padding: 100px 0px;
   font-size: 14px;
-}
-
-.knap { //her defineres knappens størrelse
-  width: 80px;
-  height: 40px;
-}
-
-.knapFyld { //knappe fyldet.
-  width: 85px; //størrelse
-  height: 45px; //størrelse
-}
-
-.knapKant {//Denne del af knappen er lidt rodet
-  width: 80px; //størrelse
-  height: 40px;
 }
 
 /*========================================================================
  ==============================FORSIDE====================================
 =========================================================================*/
 
+//alt styling der kun er på forsiden
 
 /*================kollektiv===============*/
 
@@ -216,28 +244,47 @@ input:nth-last-child(1) {
   text-align: center;
 }
 
+
+/*-------------------------------------------------------------------------
+----------------------------------showcase-----------------------
+---------------------------------------------------------------------------*/
+
+//Gør at billeder i showcase er fikantet(på mobil)
+.firkant {
+  height: 100vw; //sætter højden = med breden på skærmen. Dette gør at de er fikantet
+  background-size: cover; //placering af billederne
+  background-position: center center; //placering af billederne
+}
+
+//produkt billede skal være relativ, så vi kan placere .navnOverlay
+.produktbillede {
+  position: relative;
+}
+
+//Navn overlay placeres ved brug er absolute position og top/left
+.navnOverlay {
+  position: absolute;
+  background-color: rgba(247, 216, 136, 0.8); //farven på overlay med gennemsigtighed
+  top: 60%;
+  left: 10%; //måske skal det bare centreres
+}
+
+//Placering af overskrift
 .indhold h2 {
   grid-row: 1;
   grid-column: 1/13;
 }
 
+//placering af body
 .indhold p {
   grid-row: 2;
   grid-column: 2/12;
 }
 
+/*====showcases knap===*/
+//Dette skal ikke ændres!!!!
 
-
-
-/*================showcases===============*/
-
-.firkant {
-  height: 100vw;
-  background-size: cover;
-  background-position: center center;
-}
-
-.showcase23 {
+.showcaseKnap {
   grid-row: 3;
   grid-column: 1/13;
   margin-top: 40px;
@@ -245,7 +292,7 @@ input:nth-last-child(1) {
 }
 
 .knapFyld.showcase {
-  background-color: $color-blue;
+
   width: 100px; //størrelse
   height: 40px;
   left: 0px; //forskydes til venstre
@@ -256,47 +303,54 @@ input:nth-last-child(1) {
   width: 100px; //størrelse
   height: 40px;
 }
-.produktbillede {
-  position: relative;
-}
 
-.navnOverlay {
-  position: absolute;
-  background-color: rgba(247, 216, 136, 0.8);
-  top: 60%;
-  left: 25%;
+/*-------------------------------------------------------------------------
+----------------------------------Tobias showcase------------------------
+---------------------------------------------------------------------------*/
+//Alt hvad der er anderledes i tobiases showcase
 
-}
-
-.indhold p {
-  background-color: rgba(247, 216, 136, 0.95);;
-}
-
-
-
-/*================Tobias===============*/
+//farve og krymmel bag indhold
 .indhold.tobias {
   background-color: $color-yellow;
   grid-column: 1/13;
   background-image: url("../images/tobiaskrymmel.png");
 }
+
+//billede af tobias ansigt
 .ansigt.tobias {
   background-image: url("../images/tobais.png");
 }
 
+//billede af tobias produktbillede
 .produktbillede.tobias {
   background-image: url("../images/produktbilledeTobias.png");
 }
 
+//gør at der ikke er krymmel bag teksten
+.indhold p {
+  background-color: rgba(247, 216, 136, 0.95);;
+}
 
+//Farven på knappen
+.knapFyld.showcase.tobias {
+  background-color: $color-blue;
+}
 
+/*-------------------------------------------------------------------------
+----------------------------------Amalie showcase-----------------------
+---------------------------------------------------------------------------*/
+//Alt hvad der er anderledes i amalies showcase
+
+/*-------------------------------------------------------------------------
+----------------------------------Frederik Showcase-----------------------
+---------------------------------------------------------------------------*/
+//Alt hvad der er anderledes i Frederiks showcase
 
 /*================KONTRAST==============*/
 
 .kontrastBG {
   background-color: $color-pink;
 }
-
 
 .kontrast {
   height: 500px; //højden på sektionen, skal slettes nå der kommer indhold
@@ -305,12 +359,36 @@ input:nth-last-child(1) {
 }
 
 
+/*========================================================================
+ ==============================Personlige sider===========================
+=========================================================================*/
+
+//Her står alt som de personlige sider har tilfældes
+
+/*-------------------------------------------------------------------------
+----------------------------------TOBIAS------------------------
+---------------------------------------------------------------------------*/
+
+//Her står alt som kun er på tobiases side
+
+/*-------------------------------------------------------------------------
+----------------------------------Amalie------------------------
+---------------------------------------------------------------------------*/
+
+//Her står alt som kun er på Amalies side
+
+/*-------------------------------------------------------------------------
+----------------------------------Frederik------------------------
+---------------------------------------------------------------------------*/
+
+//Her står alt som kun er på Frederiks side
+
 /*================Responsivitet===============*/
 
 
 
 @media screen and (min-width: 660px) {
-  // Alt der Êndres i tablet stÂende fra mobil
+  // Alt over 660. Tablet og Desktop
 
   /*================Forside===============*/
 
@@ -334,27 +412,29 @@ input:nth-last-child(1) {
     min-width: 50%;
   }
 
+  /*================Personlige sider===============*/
 
 }
 
-@media screen and (min-width: 992px) {
-  // Alt der Êndres i tablet liggende fra mobil og tablet stÂende
+@media screen and (min-width: 1600px) {
+  // Meget store desktop skærme
+
+  /*================Forside===============*/
+
+  /*================Showcase===============*/
+
+  /*================Personlige sider===============*/
+
 }
 
-@media screen and (min-width: 1200px) {
-  // Alt der Êndres i computer fra mobil, tablet stÂende og tablet liggende
-}
-
-@media print {
-  // Alt der gÊlder for print specifikt
-}
 
 
 
 
 
 
-/*=====BURGER MENU=====*/
+
+/*================BURGER MENU===============*/
 // den ligger i bunden fordi den fylder meget, og ikke skal ændres på :)
 
 .hamburger{

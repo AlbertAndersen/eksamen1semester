@@ -30,20 +30,21 @@
 <!-- i <body> har man alt indhold på siden -->
 <body>
 
-
 <!--- Menu Overlay. Dette er skjult indtil man aktivere det med javascript ----->
 
 <div id="myNav" class="overlay">
 
     <!-- Overlay content. De links der kommer frem -->
     <div class="overlay-content">
+
         <a href="#">FORSIDE</a>
-        <a href="#">TOBIAS TRADS</a>
+        <a href="undersider/tobias.html">TOBIAS TRADS</a>
         <a href="#">AMALIE VON SCHRAM</a>
         <a href="#">FREDERIK WOLMER</a>
+        <!-- Skal lukke overlay og sender folk til bunden af side -->
         <a href="#">KONTAKT</a>
-    </div>
 
+    </div>
 </div>
 
 
@@ -52,9 +53,11 @@
 
     <!-- Det her er knappen der åbner og lukker menuen. -->
     <button class="hamburger hamburger--spring" type="button" >
+
         <span class="hamburger-box">
         <span class="hamburger-inner"></span>
         </span>
+
     </button>
 
     <!-- her er javascript der åbner og lukker menuen -->
@@ -76,12 +79,7 @@
             }
             //skifter mellem at knappen med .hamburger har klassen "is-active"
             hamburger.classList.toggle("is-active");
-
-
         });
-
-
-
     </script>
 
     <!-- Her er en div som jeg har givet en width, height og boarder. så den kan bruges som placeholder -->
@@ -96,7 +94,7 @@
 
     <h1>ET KOLLEKTIV</h1>
 
-    <img src="images/butikDrop.png" alt="" class="dropshadow">
+    <img src="images/butikDrop.png" alt="">
 
     <p>Ut bibendum non tellus non volutpat. Nam quis pretium ex. Nulla dapibus pellentesque nisl, at pretium turpis. Mauris sit amet justo sed ante dignissim ultrices. Quisque vitae lacinia massa. In feugiat, mauris id condimentum interdum, magna mauris dapibus odio, pªorttitor vulputate felis arcu at est. Aliquam erat volutpat.</p>
 
@@ -105,62 +103,60 @@
 
 <!--- Tobias ------->
 
+<!-- Showcase er en hel sektion for en person ------->
 <div class="showcase">
 
+    <!--- Billeder og tekst(kaldet indhold) er blevet opdelt i to, så de kan vises side om side på desktop via flex------->
     <div class="showcaseFlex">
 
+        <!--- opdeles igen for at give heigt og width i css------->
         <div class="showcaseBilleder">
 
-            <div class="ansigt tobias firkant">
+            <!--- Her er diven med tobiases ansigt------->
+            <div class="ansigt tobias firkant"></div>
 
-            </div>
-
+            <!--- Er er billedet af produktet------->
             <div class="produktbillede tobias firkant">
+
+                <!--- Overlay under navnet af personen------->
                 <div class="navnOverlay dropshadow">
+
                     <h3>TOBIAS TRADS</h3>
+
                 </div>
+
             </div>
 
         </div>
 
+        <!--- Alt "indhold" på showcase. Denne div har også class med navnet på personen, så man kan genbruge koden. Bare husk at ændre navnet------->
         <div class="indhold tobias grid">
-
-
 
                 <h2>Duis ultrices dolor eu elit efficitur varius</h2>
 
                 <p>Sed ultrices id enim facilisis iaculis. Etiam quis dui eget ipsum tincidunt fermentum. Proin vitae nulla varius, consectetur ante a, ultrices erat. Suspendisse malesuada, turpis nec sollicitudin fringilla, arcu purus aliquam tortor, nec vehicula justo lacus sit amet massa. Pellentesque suscipit ac turpis eget finibus. Duis dictum purus sed feugiat feugiat. Aliquam erat volutpat. In rhoncus dapibus elit, ac rhoncus augue. Mauris mi neque, vestibulum in venenatis vitae, porta at leo.</p>
 
-
-            <div class="flex showcase23">
+            <!--- placering af knap i showcase------->
+            <div class="flex showcaseKnap">
 
                 <!--- knappen laves her -->
                 <div class="knap tobias">
 
                     <!--- Fyldes laves her, som så bliver forskudt i forhold til kanten -->
-                    <div class="knapFyld showcase">
+                    <div class="knapFyld showcase tobias">
 
                         <!--- Her lavesen kant, fordi ellers ligger fyldet ovenpå kanten -->
                         <div class="knapKant showcase">
 
-                            <!--- Her er selve knappen --->
-                            <a href="#" class="knapTekst">LÆS MERE </a>
+                            <!--- Her er selve knappen. Linket skal tilpasses så det sender en til deres personlige side--->
+                            <a href="undersider/tobias.html" class="knapTekst">LÆS MERE </a>
 
                         </div>
-
                     </div>
-
                 </div>
-
-
             </div>
-
         </div>
-
     </div>
-
-
-
 </div>
 
 <!--- Amalie------->
@@ -184,10 +180,13 @@
 
 
 <div class="footer forside">
+
     <h1>KONTAKT OS</h1>
 
+    <!--- Kontaktform som bruger grid til at placering------->
     <div class="kontaktForm grid">
 
+        <!--- Input felter------->
         <input type="text" placeholder="NAVN*">
         <input type="text" placeholder="EMAIL*">
         <input type="text" placeholder="EMNE*">
@@ -199,46 +198,43 @@
     <!--- Klassen flex er for at centrere --->
     <div class="flex">
 
-            <!--- knappen laves her -->
-           <div class="knap sendknap">
+        <!--- knappen laves her -->
+       <div class="knap sendknap">
 
-               <!--- Fyldes laves her, som så bliver forskudt i forhold til kanten -->
-               <div class="knapFyld">
+           <!--- Fyldes laves her, som så bliver forskudt i forhold til kanten -->
+           <div class="knapFyld">
 
-                   <!--- Her lavesen kant, fordi ellers ligger fyldet ovenpå kanten -->
-                   <div class="knapKant">
+               <!--- Her lavesen kant, fordi ellers ligger fyldet ovenpå kanten -->
+               <div class="knapKant">
 
-                       <!--- Her er selve knappen --->
-                       <a href="#" class="knapTekst">SEND </a>
-
-                   </div>
-
+                   <!--- Her er selve knappen --->
+                   <a href="#" class="knapTekst">SEND </a>
                </div>
-
            </div>
-
-
+       </div>
     </div>
 
-
+    <!---Navnet bund beskriver at det er bunden af footeren ------->
     <Div class="bund">
 
         <div class="kontaktinfo">
+
+            <!--- "ELLER" Har sin egen klasse fordi den skal styles anderledes ------->
             <P class="eller">ELLER</P>
             <P>KONTAKT@CHOCOLATECLUB.DK</P>
             <P>VEJEN 3, KØBENHAVN </P>
             <P>+45 39 29 48 23</P>
+
         </div>
+
+        <!---Alle socialmedie ikoner ------->
         <div class="some"">
+
             <i class="fa fa-facebook-square fa-2x"></i>
             <i class="fa fa-instagram fa-2x"></i>
             <i class="fa fa-pinterest-square fa-2x"></i>
+
         </div>
     </Div>
-
-
-
 </div>
-
-
 </body>

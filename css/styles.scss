@@ -3,8 +3,6 @@
 
 /*================"Sektion Navn"================*/
 
-
-
 //her er alle de ting der ikke passer andre steder.
 /*================GENERELT================*/
 @font-face { //Definere fonten odin, så vi kan bruge den
@@ -51,7 +49,7 @@ $color-pink: #ebb3df;
 
 //dropshadows
 .dropshadow {
-  box-shadow: -18px 18px 41px -18px rgba(0,0,0,0.28);
+  //box-shadow: -18px 18px 41px -18px rgba(0,0,0,0.28);
 }
 
 /*================knappen================*/
@@ -69,7 +67,6 @@ $color-pink: #ebb3df;
   color: white;
   justify-content: center;
   margin-top: 10px;
-
 }
 
 .knap { //her defineres knappens størrelse
@@ -77,6 +74,7 @@ $color-pink: #ebb3df;
   justify-content: center;
   width: 80px;
   height: 40px;
+  margin: 30px 0px;
 }
 
 .knapFyld { //knappe fyldet.
@@ -94,7 +92,7 @@ $color-pink: #ebb3df;
   border: 5px solid #fdfdfd; //kanten laves, farve + tykkelse
   width: 80px; //størrelse
   height: 40px;
-  z-index: 4; //tror faktisk ikke det gør noget
+  z-index: 0; //tror faktisk ikke det gør noget
   right: 10px; // kanten placeres i forhold til .knapfyld og skal derfor forskydes tilbage på sin plads
   bottom: 10px; // det samme sker her
   display: flex; // ved ikke hvorfor der er flex her
@@ -119,6 +117,58 @@ $color-pink: #ebb3df;
 
 }
 
+
+/*================KONTAKT FORM===============*/
+
+input {
+  margin: 20px 0px;
+  grid-column: 3/11;
+  border: none;
+  background-color: $color-yellow;
+  color: white;
+  font-size: 16px;
+  height: 30px;
+  box-shadow: -16px 21px 34px 0px rgba(0, 0, 0, 0.1);
+}
+
+input:nth-last-child(1) {
+  height: 100px;
+}
+
+
+/*================footer===============*/
+
+.sendknap {
+  margin-top: 75px;
+}
+
+.footer {
+  background-color: $color-pink;
+}
+
+.bund {
+  text-align: center;
+  margin-top: 120px;
+  font-family: odin;
+  font-size: 24px;
+  letter-spacing: 5px;
+}
+
+.some {
+  padding: 50px 0;
+}
+
+.eller {
+  padding: 100px 0px;
+  font-size: 20px;
+}
+
+
+/*========================================================================
+ ==============================FORSIDE====================================
+=========================================================================*/
+
+
 /*================kollektiv===============*/
 
 .kollektiv h1 { //placering af header
@@ -142,25 +192,39 @@ $color-pink: #ebb3df;
 
 }
 
+
+/*================showcases===============*/
+
+.firkant {
+  height: 100vw;
+  background-size: cover;
+
+}
+
+/*================Tobias===============*/
+.indhold.tobias {
+  background-color: $color-yellow;
+}
+.ansigt.tobias {
+  background-image: url("../images/tobais.png");
+}
+
+.produktbillede.tobias {
+  background-image: url("../images/produktbilledeTobias.png");
+}
+
 /*================KONTRAST==============*/
 
 .kontrastBG {
   background-color: $color-pink;
 }
 
+
 .kontrast {
   height: 500px; //højden på sektionen, skal slettes nå der kommer indhold
   background-color: $color-yellow;
   clip-path: polygon(0 0, 100% 0, 100% 85%, 0% 100%); // giver den skrå kant
 }
-/*================footer===============*/
-
-.footer {
-  height: 500px;
-  background-color: $color-pink;
-}
-
-
 
 
 /*================Responsivitet===============*/

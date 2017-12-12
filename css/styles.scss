@@ -234,7 +234,7 @@ input:nth-last-child(1) {
 .firkant {
   height: 100vw;
   background-size: cover;
-
+  background-position: center center;
 }
 
 .showcase23 {
@@ -268,12 +268,17 @@ input:nth-last-child(1) {
 
 }
 
+.indhold p {
+  background-color: rgba(247, 216, 136, 0.95);;
+}
+
 
 
 /*================Tobias===============*/
 .indhold.tobias {
   background-color: $color-yellow;
   grid-column: 1/13;
+  background-image: url("../images/tobiaskrymmel.png");
 }
 .ansigt.tobias {
   background-image: url("../images/tobais.png");
@@ -303,8 +308,33 @@ input:nth-last-child(1) {
 /*================Responsivitet===============*/
 
 
-@media screen and (min-width: 768px) {
+
+@media screen and (min-width: 660px) {
   // Alt der Êndres i tablet stÂende fra mobil
+
+  /*================Forside===============*/
+
+  /*================Showcase===============*/
+  .showcaseFlex {
+    display: flex;
+  }
+
+  .showcaseBilleder {
+    width: 50%;
+    max-height: 600px;
+    max-width: 700px;
+  }
+
+  .firkant {
+    height: 50vw;
+    max-height: 300px;
+  }
+
+  .indhold {
+    min-width: 50%;
+  }
+
+
 }
 
 @media screen and (min-width: 992px) {

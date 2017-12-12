@@ -169,7 +169,8 @@ input:nth-last-child(1) {
 /*================showcases===============*/
 .firkant {
   height: 100vw;
-  background-size: cover; }
+  background-size: cover;
+  background-position: center center; }
 
 .showcase23 {
   grid-row: 3;
@@ -197,10 +198,14 @@ input:nth-last-child(1) {
   top: 60%;
   left: 25%; }
 
+.indhold p {
+  background-color: rgba(247, 216, 136, 0.95); }
+
 /*================Tobias===============*/
 .indhold.tobias {
   background-color: #f7d888;
-  grid-column: 1/13; }
+  grid-column: 1/13;
+  background-image: url("../images/tobiaskrymmel.png"); }
 
 .ansigt.tobias {
   background-image: url("../images/tobais.png"); }
@@ -218,6 +223,23 @@ input:nth-last-child(1) {
   clip-path: polygon(0 0, 100% 0, 100% 85%, 0% 100%); }
 
 /*================Responsivitet===============*/
+@media screen and (min-width: 660px) {
+  /*================Forside===============*/
+  /*================Showcase===============*/
+  .showcaseFlex {
+    display: flex; }
+
+  .showcaseBilleder {
+    width: 50%;
+    max-height: 600px;
+    max-width: 700px; }
+
+  .firkant {
+    height: 50vw;
+    max-height: 300px; }
+
+  .indhold {
+    min-width: 50%; } }
 /*=====BURGER MENU=====*/
 .hamburger {
   z-index: 2;

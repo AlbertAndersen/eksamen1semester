@@ -10,6 +10,7 @@
   src: url('odin.otf');
 }
 
+
 body {
   margin: 0; // Ingen kanter i siden af browser
   font-family: Arial;
@@ -150,7 +151,7 @@ input:nth-last-child(1) {
   text-align: center;
   margin-top: 120px;
   font-family: odin;
-  font-size: 24px;
+  font-size: 20px;
   letter-spacing: 5px;
 }
 
@@ -160,7 +161,7 @@ input:nth-last-child(1) {
 
 .eller {
   padding: 100px 0px;
-  font-size: 20px;
+  font-size: 14px;
 }
 
 
@@ -187,10 +188,21 @@ input:nth-last-child(1) {
 
 .kollektiv p { //placering af tekst
   grid-column: 3 / 11;
-  padding: 100px;
+  padding: 100px 0;
   text-align: center;
-
 }
+
+.indhold h2 {
+  grid-row: 1;
+  grid-column: 1/13;
+}
+
+.indhold p {
+  grid-row: 2;
+  grid-column: 2/12;
+}
+
+
 
 
 /*================showcases===============*/
@@ -201,9 +213,21 @@ input:nth-last-child(1) {
 
 }
 
+.showcase23 {
+  grid-row: 3;
+  grid-column: 1/13;
+  margin: 100px 0px;
+}
+
+.knapFyld.tobias {
+  background-color: $color-blue;
+}
+
+
 /*================Tobias===============*/
 .indhold.tobias {
   background-color: $color-yellow;
+  grid-column: 1/13;
 }
 .ansigt.tobias {
   background-image: url("../images/tobais.png");
@@ -212,6 +236,9 @@ input:nth-last-child(1) {
 .produktbillede.tobias {
   background-image: url("../images/produktbilledeTobias.png");
 }
+
+
+
 
 /*================KONTRAST==============*/
 
@@ -222,7 +249,7 @@ input:nth-last-child(1) {
 
 .kontrast {
   height: 500px; //højden på sektionen, skal slettes nå der kommer indhold
-  background-color: $color-yellow;
+  background-color: red;
   clip-path: polygon(0 0, 100% 0, 100% 85%, 0% 100%); // giver den skrå kant
 }
 

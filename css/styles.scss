@@ -48,7 +48,7 @@ h3  {
   margin: 0;
   text-align: center;
   padding: 30px;
-  font-size: 40; //40 er ikke den endelige størrelse. Skal måske ændres så skrift størrelsen er responsiv?
+  font-size: 28px; //40 er ikke den endelige størrelse. Skal måske ændres så skrift størrelsen er responsiv?
 }
 
 p {
@@ -354,7 +354,7 @@ input:nth-last-child(1) {
 
 .kontrast {
   height: 500px; //højden på sektionen, skal slettes nå der kommer indhold
-  background-color: red;
+  background-color: $color-blue;
   clip-path: polygon(0 0, 100% 0, 100% 85%, 0% 100%); // giver den skrå kant
 }
 

@@ -20,7 +20,14 @@
     <link rel="stylesheet" href="css/hamburgers.css">
     <link href="css/styles.css" rel="stylesheet" type="text/css">
     <script src="https://use.fontawesome.com/75970a48c3.js"></script>
-    <script src="script.js"></script>
+    <script src="javascript/script.js"></script>
+
+    <!--Linker til jquery -->
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <!--Linker til smoothscroll fil-->
+    <script type="text/javascript" src="javascript/smoothscroll.js"></script>
+
+
 
     <!-- Sikrer den vises korrekt på mobil, tablet mv. ved at tage ift. skærmstørrelse -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -37,12 +44,14 @@
     <!-- Overlay content. De links der kommer frem -->
     <div class="overlay-content">
 
-        <a href="#">FORSIDE</a>
+        <!-- onclick lukker overlay. #top går til a tag med navn top. class smoothscroll aktivere smoothscroll -->
+        <a href="#top" class="smoothScroll" onclick="closeNav()">FORSIDE</a>
+
         <a href="undersider/tobias.html">TOBIAS TRADS</a>
         <a href="#">AMALIE VON SCHRAM</a>
         <a href="#">FREDERIK WOLMER</a>
-        <!-- Skal lukke overlay og sender folk til bunden af side -->
-        <a href="#">KONTAKT</a>
+        <!-- onclick lukker overlay. #footer går til a tag med navn footer. class smoothscroll aktivere smoothscroll -->
+        <a class="smoothScroll" href="#footer" onclick="closeNav()">KONTAKT</a>
 
     </div>
 </div>
@@ -50,6 +59,8 @@
 
 <!--- HEADER ------->
 <div class="header forside">
+
+    <a name="top"></a>
 
     <!-- Det her er knappen der åbner og lukker menuen. -->
     <button class="hamburger hamburger--spring" type="button" >
@@ -180,6 +191,9 @@
 
 
 <div class="footer forside">
+
+    <!--Destination fra menu-->
+    <a name="footer"></a>
 
     <h1>KONTAKT OS</h1>
 

@@ -7,6 +7,7 @@
 /*================GENERELT================*/
 @font-face { //Definere fonten odin, så vi kan bruge den
   font-family: odin;
+  font-weight: 100;
   src: url('odin.otf');
 }
 
@@ -17,13 +18,24 @@ body {
   color: white;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1, h2, h4, h5, h6 {
   margin: 0; // Ingen ydre margen fra overskrifter
   padding: 50px; // Ingen indre margen fra overskrifter
   text-align: center;
   font-family: odin;
   letter-spacing: 5px;
+  text-transform: uppercase;
+  font-weight: 100;
 }
+
+h3  {
+  font-family: Arial;
+  margin: 0;
+  text-align: center;
+  padding: 30px;
+  font-size: 40;
+}
+
 p {
   margin: 0; // Ingen ydre margen fra paragraffer
   padding: 0; // Ingen indre margen fra paragraffer
@@ -50,7 +62,7 @@ $color-pink: #ebb3df;
 
 //dropshadows
 .dropshadow {
-  //box-shadow: -18px 18px 41px -18px rgba(0,0,0,0.28);
+  box-shadow: -18px 18px 41px -18px rgba(0,0,0,0.28);
 }
 
 /*================knappen================*/
@@ -73,18 +85,15 @@ $color-pink: #ebb3df;
 .knap { //her defineres knappens størrelse
   position: absolute;
   justify-content: center;
-  width: 80px;
-  height: 40px;
+
   margin: 30px 0px;
 }
 
 .knapFyld { //knappe fyldet.
   position: absolute; // gør at elementerne kan stackes
   background-color: $color-yellow;
-  width: 85px; //størrelse
-  height: 45px; //størrelse
-  left: 10px; //forskydes til venstre
-  top: 10px; //forskydes ned
+  left: 5px; //forskydes til venstre
+  top: 5px; //forskydes ned
 }
 
 .knapKant {//Denne del af knappen er lidt rodet
@@ -94,8 +103,8 @@ $color-pink: #ebb3df;
   width: 80px; //størrelse
   height: 40px;
   z-index: 0; //tror faktisk ikke det gør noget
-  right: 10px; // kanten placeres i forhold til .knapfyld og skal derfor forskydes tilbage på sin plads
-  bottom: 10px; // det samme sker her
+  right: 5px; // kanten placeres i forhold til .knapfyld og skal derfor forskydes tilbage på sin plads
+  bottom: 5px; // det samme sker her
   display: flex; // ved ikke hvorfor der er flex her
 }
 
@@ -153,6 +162,7 @@ input:nth-last-child(1) {
   font-family: odin;
   font-size: 20px;
   letter-spacing: 5px;
+  font-weight: 100;
 }
 
 .some {
@@ -164,6 +174,20 @@ input:nth-last-child(1) {
   font-size: 14px;
 }
 
+.knap { //her defineres knappens størrelse
+  width: 80px;
+  height: 40px;
+}
+
+.knapFyld { //knappe fyldet.
+  width: 85px; //størrelse
+  height: 45px; //størrelse
+}
+
+.knapKant {//Denne del af knappen er lidt rodet
+  width: 80px; //størrelse
+  height: 40px;
+}
 
 /*========================================================================
  ==============================FORSIDE====================================
@@ -216,12 +240,34 @@ input:nth-last-child(1) {
 .showcase23 {
   grid-row: 3;
   grid-column: 1/13;
-  margin: 100px 0px;
+  margin-top: 40px;
+  margin-bottom: 130px;
 }
 
-.knapFyld.tobias {
+.knapFyld.showcase {
   background-color: $color-blue;
+  width: 100px; //størrelse
+  height: 40px;
+  left: 0px; //forskydes til venstre
+  top: 0px; //forskydes ned
 }
+
+.knapKant.showcase {//Denne del af knappen er lidt rodet
+  width: 100px; //størrelse
+  height: 40px;
+}
+.produktbillede {
+  position: relative;
+}
+
+.navnOverlay {
+  position: absolute;
+  background-color: rgba(247, 216, 136, 0.8);
+  top: 60%;
+  left: 25%;
+
+}
+
 
 
 /*================Tobias===============*/
@@ -322,6 +368,7 @@ input:nth-last-child(1) {
   transition: 0.3s; /* Transition effects on hover (color) */
   font-family: odin;
   letter-spacing: 5px;
+  font-weight: 100;
 }
 
 /* When you mouse over the navigation links, change their color */

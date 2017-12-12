@@ -1,0 +1,254 @@
+/*================"Sektion Navn"================*/
+/*================GENERELT================*/
+@font-face {
+  font-family: odin;
+  src: url("odin.otf"); }
+body {
+  margin: 0;
+  font-family: Arial;
+  color: white; }
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  padding: 50px;
+  text-align: center;
+  font-family: odin;
+  letter-spacing: 5px; }
+
+p {
+  margin: 0;
+  padding: 0; }
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto; }
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: auto; }
+
+/*================knappen================*/
+.flex {
+  display: flex;
+  justify-content: center; }
+
+.knapTekst {
+  text-decoration: none;
+  color: white;
+  justify-content: center;
+  margin-top: 10px; }
+
+.knap {
+  position: absolute;
+  justify-content: center;
+  width: 80px;
+  height: 40px;
+  margin: 30px 0px; }
+
+.knapFyld {
+  position: absolute;
+  background-color: #f7d888;
+  width: 85px;
+  height: 45px;
+  left: 10px;
+  top: 10px; }
+
+.knapKant {
+  position: absolute;
+  justify-content: center;
+  border: 5px solid #fdfdfd;
+  width: 80px;
+  height: 40px;
+  z-index: 0;
+  right: 10px;
+  bottom: 10px;
+  display: flex; }
+
+/*================HEADER===============*/
+.header {
+  background-color: #f7d888;
+  height: 400px;
+  background-image: none;
+  background-size: cover; }
+
+.logo {
+  height: 300px;
+  width: 300px;
+  border: solid white 6px;
+  position: relative;
+  top: 62%;
+  margin: auto; }
+
+/*================KONTAKT FORM===============*/
+input {
+  margin: 20px 0px;
+  grid-column: 3/11;
+  border: none;
+  background-color: #f7d888;
+  color: white;
+  font-size: 16px;
+  height: 30px;
+  box-shadow: -16px 21px 34px 0px rgba(0, 0, 0, 0.1); }
+
+input:nth-last-child(1) {
+  height: 100px; }
+
+/*================footer===============*/
+.sendknap {
+  margin-top: 75px; }
+
+.footer {
+  background-color: #ebb3df; }
+
+.bund {
+  text-align: center;
+  margin-top: 120px;
+  font-family: odin;
+  font-size: 20px;
+  letter-spacing: 5px; }
+
+.some {
+  padding: 50px 0; }
+
+.eller {
+  padding: 100px 0px;
+  font-size: 14px; }
+
+/*========================================================================
+ ==============================FORSIDE====================================
+=========================================================================*/
+/*================kollektiv===============*/
+.kollektiv h1 {
+  grid-column: 1/13; }
+
+.kollektiv {
+  background-color: #ace9e3;
+  padding-top: 250px; }
+
+.kollektiv img {
+  grid-column: 3 / 11;
+  margin: auto; }
+
+.kollektiv p {
+  grid-column: 3 / 11;
+  padding: 100px 0;
+  text-align: center; }
+
+.indhold h2 {
+  grid-row: 1;
+  grid-column: 1/13; }
+
+.indhold p {
+  grid-row: 2;
+  grid-column: 2/12; }
+
+/*================showcases===============*/
+.firkant {
+  height: 100vw;
+  background-size: cover; }
+
+.showcase23 {
+  grid-row: 3;
+  grid-column: 1/13;
+  margin: 100px 0px; }
+
+.knapFyld.tobias {
+  background-color: #ace9e3; }
+
+/*================Tobias===============*/
+.indhold.tobias {
+  background-color: #f7d888;
+  grid-column: 1/13; }
+
+.ansigt.tobias {
+  background-image: url("../images/tobais.png"); }
+
+.produktbillede.tobias {
+  background-image: url("../images/produktbilledeTobias.png"); }
+
+/*================KONTRAST==============*/
+.kontrastBG {
+  background-color: #ebb3df; }
+
+.kontrast {
+  height: 500px;
+  background-color: red;
+  clip-path: polygon(0 0, 100% 0, 100% 85%, 0% 100%); }
+
+/*================Responsivitet===============*/
+/*=====BURGER MENU=====*/
+.hamburger {
+  z-index: 2;
+  position: fixed;
+  top: 20px;
+  right: 45px; }
+
+/* The Overlay (background) */
+.overlay {
+  /* Height & width depends on how you want to reveal the overlay (see JS below) */
+  height: 100%;
+  width: 0;
+  position: fixed;
+  /* Stay in place */
+  z-index: 1;
+  /* Sit on top */
+  left: 0;
+  top: 0;
+  background-color: black;
+  /* Black fallback color */
+  background-color: rgba(247, 216, 136, 0.9);
+  /* Black w/opacity */
+  overflow-x: hidden;
+  /* Disable horizontal scroll */
+  transition: 0.5s;
+  /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */ }
+
+/* Position the content inside the overlay */
+.overlay-content {
+  position: relative;
+  top: 25%;
+  /* 25% from the top */
+  width: 100%;
+  /* 100% width */
+  text-align: center;
+  /* Centered text/links */
+  margin-top: 30px;
+  /* 30px top margin to avoid conflict with the close button on smaller screens */ }
+
+/* The navigation links inside the overlay */
+.overlay a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 22px;
+  color: #f6f7fd;
+  display: block;
+  /* Display block instead of inline */
+  transition: 0.3s;
+  /* Transition effects on hover (color) */
+  font-family: odin;
+  letter-spacing: 5px; }
+
+/* When you mouse over the navigation links, change their color */
+.overlay a:hover, .overlay a:focus {
+  color: #f1f1f1; }
+
+/* Position the close button (top right corner) */
+.overlay .closebtn {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px; }
+
+/* When the height of the screen is less than 450 pixels, change the font-size of the links and position the close button again, so they don't overlap */
+@media screen and (max-height: 450px) {
+  .overlay a {
+    font-size: 20px; }
+
+  .overlay .closebtn {
+    font-size: 40px;
+    top: 15px;
+    right: 35px; } }
+
+/*# sourceMappingURL=styles.css.map */

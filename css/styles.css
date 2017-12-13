@@ -26,6 +26,9 @@ h1, h2, h4, h5, h6 {
   text-transform: uppercase;
   font-weight: 100; }
 
+h5 {
+  padding: 0; }
+
 h3 {
   font-family: Arial;
   margin: 0;
@@ -254,18 +257,40 @@ input:nth-last-child(1) {
   grid-column: 1/13;
   margin-top: 55%; }
 
-.hvadlaverjeg {
+.hvadlaverjeg, .mitarbejde {
   grid-column: 1/13; }
 
 .tobiastekst, .tobiastekst2 {
   grid-column: 4/10;
-  margin-bottom: 20%; }
+  margin-top: 15%;
+  max-width: 500px; }
+
+.tobiastekst2 {
+  margin-bottom: 15%; }
+
+.tobiasansigt, .tobiasansigt2 {
+  grid-column: 3/11; }
+
+.arbejde1, .arbejde2, .arbejde3 {
+  grid-column: 3/11;
+  position: relative;
+  margin-bottom: 30%; }
+
+.overlay1, .overlay2, .overlay3 {
+  position: absolute;
+  background-color: rgba(247, 216, 136, 0.8);
+  top: 70%;
+  left: 10%;
+  padding: 7%; }
 
 /*-------------------------------------------------------------------------
 ----------------------------------TOBIAS------------------------
 ---------------------------------------------------------------------------*/
 .baggrund {
   background-color: #ace9e3; }
+
+.baggrund2 {
+  background-color: #f7d888; }
 
 /*-------------------------------------------------------------------------
 ----------------------------------Amalie------------------------

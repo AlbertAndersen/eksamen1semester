@@ -80,6 +80,18 @@ $color-pink: #ebb3df;
   box-shadow: -18px 18px 41px -18px rgba(0,0,0,0.28);
 }
 
+//overlay med farverne og gennemsigtighed, så tekst er mere synligt ved krymmel
+.overlayyellow{
+  background-color: rgba(247,216,136,0.95);
+}
+.overlayblue{
+  background-color: rgba(172,233,227,0.95);
+}
+.overlaypink{
+  background-color: rgba(235,179,223,0.95);
+}
+
+
 /*================knappen================*/
 
 //knappen, som er virkelig dårlig lavet, men den virker
@@ -318,11 +330,6 @@ input:nth-last-child(1) {
   background-image: url("../images/produktbilledeTobias.png");
 }
 
-//gør at der ikke er krymmel bag teksten
-.indhold p{
-  background-color: rgba(247, 216, 136, 0.95);
-}
-
 //Farven på knappen
 .knapFyld.showcase.tobias {
   background-color: $color-blue;
@@ -350,11 +357,6 @@ input:nth-last-child(1) {
   background-image: url("../images/produktbilledeTobias.png");
 }
 
-//gør at der ikke er krymmel bag teksten
-.indhold p{
-  background-color: rgba(247, 216, 136, 0.95);
-}
-
 //Farven på knappen
 .knapFyld.showcase.amalie {
   background-color: $color-pink;
@@ -380,11 +382,6 @@ input:nth-last-child(1) {
 //billede af tobias produktbillede
 .produktbillede.frederik {
   background-image: url("../images/produktbilledeTobias.png");
-}
-
-//gør at der ikke er krymmel bag teksten
-.indhold p{
-  background-color: rgba(247, 216, 136, 0.95);
 }
 
 //Farven på knappen

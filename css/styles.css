@@ -50,6 +50,15 @@ img {
 .dropshadow {
   box-shadow: -18px 18px 41px -18px rgba(0, 0, 0, 0.28); }
 
+.overlayyellow {
+  background-color: rgba(247, 216, 136, 0.95); }
+
+.overlayblue {
+  background-color: rgba(172, 233, 227, 0.95); }
+
+.overlaypink {
+  background-color: rgba(235, 179, 223, 0.95); }
+
 /*================knappen================*/
 .flex {
   display: flex;
@@ -218,9 +227,6 @@ input:nth-last-child(1) {
 .produktbillede.tobias {
   background-image: url("../images/produktbilledeTobias.png"); }
 
-.indhold p {
-  background-color: rgba(247, 216, 136, 0.95); }
-
 .knapFyld.showcase.tobias {
   background-color: #ace9e3; }
 
@@ -238,9 +244,6 @@ input:nth-last-child(1) {
 .produktbillede.amalie {
   background-image: url("../images/produktbilledeTobias.png"); }
 
-.indhold p {
-  background-color: rgba(247, 216, 136, 0.95); }
-
 .knapFyld.showcase.amalie {
   background-color: #ebb3df; }
 
@@ -257,9 +260,6 @@ input:nth-last-child(1) {
 
 .produktbillede.frederik {
   background-image: url("../images/produktbilledeTobias.png"); }
-
-.indhold p {
-  background-color: rgba(247, 216, 136, 0.95); }
 
 .knapFyld.showcase.frederik {
   background-color: #ace9e3; }

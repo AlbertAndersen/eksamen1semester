@@ -230,6 +230,62 @@
 
 <!--- Frederik ------->
 
+<!-- Showcase er en hel sektion for en person ------->
+<div class="showcase">
+
+    <!--- Billeder og tekst(kaldet indhold) er blevet opdelt i to, så de kan vises side om side på desktop via flex------->
+    <div class="showcaseFlex">
+
+        <!--- opdeles igen for at give heigt og width i css------->
+        <div class="showcaseBilleder">
+
+            <!--- Her er diven med tobiases ansigt------->
+            <div class="ansigt frederik firkant"></div>
+
+            <!--- Er er billedet af produktet------->
+            <div class="produktbillede frederik firkant">
+
+                <!--- Overlay under navnet af personen------->
+                <div class="navnOverlay dropshadow">
+
+                    <h3>FREDERIK WOLMAR</h3>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <!--- Alt "indhold" på showcase. Denne div har også class med navnet på personen, så man kan genbruge koden. Bare husk at ændre navnet------->
+        <div class="indhold frederik grid">
+
+            <h2>Duis ultrices dolor eu elit efficitur varius</h2>
+
+            <p>Sed ultrices id enim facilisis iaculis. Etiam quis dui eget ipsum tincidunt fermentum. Proin vitae nulla varius, consectetur ante a, ultrices erat. Suspendisse malesuada, turpis nec sollicitudin fringilla, arcu purus aliquam tortor, nec vehicula justo lacus sit amet massa. Pellentesque suscipit ac turpis eget finibus. Duis dictum purus sed feugiat feugiat. Aliquam erat volutpat. In rhoncus dapibus elit, ac rhoncus augue. Mauris mi neque, vestibulum in venenatis vitae, porta at leo.</p>
+
+            <!--- placering af knap i showcase------->
+            <div class="flex showcaseKnap">
+
+                <!--- knappen laves her -->
+                <div class="knap frederik">
+
+                    <!--- Fyldes laves her, som så bliver forskudt i forhold til kanten -->
+                    <div class="knapFyld showcase frederik">
+
+                        <!--- Her lavesen kant, fordi ellers ligger fyldet ovenpå kanten -->
+                        <div class="knapKant showcase">
+
+                            <!--- Her er selve knappen. Linket skal tilpasses så det sender en til deres personlige side--->
+                            <a href="undersider/Frederik.html" class="knapTekst">LÆS MERE </a>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
 <!---  Kontrast------->
 
 <!-- Der skal være en background bag .kontrast fordi vi bruger clippath, som viser hvad der ligger bag denne klasse-->

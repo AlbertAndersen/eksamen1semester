@@ -335,7 +335,7 @@ input:nth-last-child(1) {
 
 //farve og krymmel bag indhold
 .indhold.amalie {
-  background-color: $color-yellow;
+  background-color: $color-blue;
   grid-column: 1/13;
   background-image: url("../images/tobiaskrymmel.png");
 }
@@ -357,13 +357,41 @@ input:nth-last-child(1) {
 
 //Farven på knappen
 .knapFyld.showcase.amalie {
-  background-color: $color-blue;
+  background-color: $color-pink;
 }
 
 /*-------------------------------------------------------------------------
 ----------------------------------Frederik Showcase-----------------------
 ---------------------------------------------------------------------------*/
 //Alt hvad der er anderledes i Frederiks showcase
+
+//farve og krymmel bag indhold
+.indhold.frederik {
+  background-color: $color-pink;
+  grid-column: 1/13;
+  background-image: url("../images/tobiaskrymmel.png");
+}
+
+//billede af tobias ansigt
+.ansigt.frederik {
+  background-image: url("../images/tobais.png");
+}
+
+//billede af tobias produktbillede
+.produktbillede.frederik {
+  background-image: url("../images/produktbilledeTobias.png");
+}
+
+//gør at der ikke er krymmel bag teksten
+.indhold p{
+  background-color: rgba(247, 216, 136, 0.95);
+}
+
+//Farven på knappen
+.knapFyld.showcase.frederik {
+  background-color: $color-blue;
+}
+
 
 /*================KONTRAST==============*/
 
@@ -414,7 +442,7 @@ input:nth-last-child(1) {
   /*================Showcase===============*/
 
   //Mangler kommentar. Værdier skal tweakes så de det passer bedre
-  .showcaseFlexamalie{
+  .showcaseFlexamalie{ //gør at Amalies showcase på forsiden står omvnedt (billeder i højre side)
     display: flex;
     flex-direction: row-reverse;
   }
@@ -448,6 +476,7 @@ input:nth-last-child(1) {
 }
 
 @media screen and (min-width: 835px) {
+  //Alt over 835. For tekstens (navneboks h3) skyld.
   h3 {
     font-size: 18px;
     padding: 30px;
@@ -455,7 +484,7 @@ input:nth-last-child(1) {
 }
 
 @media screen and (min-width: 1186px) {
-  //Alt over 1186. For tekstens skyld
+  //Alt over 1186. For tekstens (navneboks h3) skyld.
   h3 {
     font-size: 28px;
   }

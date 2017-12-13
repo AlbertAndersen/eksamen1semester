@@ -228,7 +228,7 @@ input:nth-last-child(1) {
 ----------------------------------Amalie showcase-----------------------
 ---------------------------------------------------------------------------*/
 .indhold.amalie {
-  background-color: #f7d888;
+  background-color: #ace9e3;
   grid-column: 1/13;
   background-image: url("../images/tobiaskrymmel.png"); }
 
@@ -242,11 +242,28 @@ input:nth-last-child(1) {
   background-color: rgba(247, 216, 136, 0.95); }
 
 .knapFyld.showcase.amalie {
-  background-color: #ace9e3; }
+  background-color: #ebb3df; }
 
 /*-------------------------------------------------------------------------
 ----------------------------------Frederik Showcase-----------------------
 ---------------------------------------------------------------------------*/
+.indhold.frederik {
+  background-color: #ebb3df;
+  grid-column: 1/13;
+  background-image: url("../images/tobiaskrymmel.png"); }
+
+.ansigt.frederik {
+  background-image: url("../images/tobais.png"); }
+
+.produktbillede.frederik {
+  background-image: url("../images/produktbilledeTobias.png"); }
+
+.indhold p {
+  background-color: rgba(247, 216, 136, 0.95); }
+
+.knapFyld.showcase.frederik {
+  background-color: #ace9e3; }
+
 /*================KONTRAST==============*/
 .kontrastBG {
   background-color: #ebb3df; }

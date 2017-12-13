@@ -319,8 +319,8 @@ input:nth-last-child(1) {
 }
 
 //gør at der ikke er krymmel bag teksten
-.indhold p {
-  background-color: rgba(247, 216, 136, 0.95);;
+.indhold p{
+  background-color: rgba(247, 216, 136, 0.95);
 }
 
 //Farven på knappen
@@ -332,6 +332,33 @@ input:nth-last-child(1) {
 ----------------------------------Amalie showcase-----------------------
 ---------------------------------------------------------------------------*/
 //Alt hvad der er anderledes i amalies showcase
+
+//farve og krymmel bag indhold
+.indhold.amalie {
+  background-color: $color-yellow;
+  grid-column: 1/13;
+  background-image: url("../images/tobiaskrymmel.png");
+}
+
+//billede af amalie ansigt
+.ansigt.amalie {
+  background-image: url("../images/tobais.png");
+}
+
+//billede af amalie produktbillede
+.produktbillede.amalie {
+  background-image: url("../images/produktbilledeTobias.png");
+}
+
+//gør at der ikke er krymmel bag teksten
+.indhold p{
+  background-color: rgba(247, 216, 136, 0.95);
+}
+
+//Farven på knappen
+.knapFyld.showcase.amalie {
+  background-color: $color-blue;
+}
 
 /*-------------------------------------------------------------------------
 ----------------------------------Frederik Showcase-----------------------
@@ -387,8 +414,13 @@ input:nth-last-child(1) {
   /*================Showcase===============*/
 
   //Mangler kommentar. Værdier skal tweakes så de det passer bedre
-  .showcaseFlex {
+  .showcaseFlexamalie{
     display: flex;
+    flex-direction: row-reverse;
+  }
+
+  .showcaseFlex{
+    display:flex;
   }
 
   .showcaseBilleder {
@@ -423,6 +455,7 @@ input:nth-last-child(1) {
 }
 
 @media screen and (min-width: 1186px) {
+  //Alt over 1186. For tekstens skyld
   h3 {
     font-size: 28px;
   }

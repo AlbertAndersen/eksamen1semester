@@ -227,6 +227,23 @@ input:nth-last-child(1) {
 /*-------------------------------------------------------------------------
 ----------------------------------Amalie showcase-----------------------
 ---------------------------------------------------------------------------*/
+.indhold.amalie {
+  background-color: #f7d888;
+  grid-column: 1/13;
+  background-image: url("../images/tobiaskrymmel.png"); }
+
+.ansigt.amalie {
+  background-image: url("../images/tobais.png"); }
+
+.produktbillede.amalie {
+  background-image: url("../images/produktbilledeTobias.png"); }
+
+.indhold p {
+  background-color: rgba(247, 216, 136, 0.95); }
+
+.knapFyld.showcase.amalie {
+  background-color: #ace9e3; }
+
 /*-------------------------------------------------------------------------
 ----------------------------------Frederik Showcase-----------------------
 ---------------------------------------------------------------------------*/
@@ -255,6 +272,10 @@ input:nth-last-child(1) {
 @media screen and (min-width: 600px) {
   /*================Forside===============*/
   /*================Showcase===============*/
+  .showcaseFlexamalie {
+    display: flex;
+    flex-direction: row-reverse; }
+
   .showcaseFlex {
     display: flex; }
 

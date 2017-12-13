@@ -363,13 +363,32 @@ input:nth-last-child(1) {
  ==============================Personlige sider===========================
 =========================================================================*/
 
-//Her står alt som de personlige sider har tilfældes
+//Her står alt som de personlige sider har tilfælles
+
+
+.hvemerjeg{
+  grid-column: 1/13;
+  margin-top: 55%;
+}
+
+.hvadlaverjeg{
+  grid-column: 1/13;
+}
+.tobiastekst, .tobiastekst2{
+ grid-column: 4/10;
+  margin-bottom: 20%;
+}
 
 /*-------------------------------------------------------------------------
 ----------------------------------TOBIAS------------------------
 ---------------------------------------------------------------------------*/
 
 //Her står alt som kun er på tobiases side
+
+.baggrund{
+  background-color: $color-blue;
+}
+
 
 /*-------------------------------------------------------------------------
 ----------------------------------Amalie------------------------

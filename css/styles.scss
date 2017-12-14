@@ -80,6 +80,18 @@ $color-pink: #ebb3df;
   box-shadow: -18px 18px 41px -18px rgba(0,0,0,0.28);
 }
 
+//overlay med farverne og gennemsigtighed, så tekst er mere synligt ved krymmel
+.overlayyellow{
+  background-color: rgba(247,216,136,0.95);
+}
+.overlayblue{
+  background-color: rgba(172,233,227,0.95);
+}
+.overlaypink{
+  background-color: rgba(235,179,223,0.95);
+}
+
+
 /*================knappen================*/
 
 //knappen, som er virkelig dårlig lavet, men den virker
@@ -101,6 +113,8 @@ $color-pink: #ebb3df;
   position: absolute;
   justify-content: center;
   margin: 30px 0px;
+  width: 80px;
+  height: 40px;
 }
 
 .knapFyld { //knappe fyldet.
@@ -108,6 +122,8 @@ $color-pink: #ebb3df;
   background-color: $color-yellow;
   left: 5px; //forskydes til venstre
   top: 5px; //forskydes ned
+  width: 85px; //størrelse
+  height: 45px; //størrelse
 }
 
 .knapKant {//Denne del af knappen er lidt rodet
@@ -125,20 +141,8 @@ $color-pink: #ebb3df;
 /*================knap igen===============*/
 //Ved ikke lige hvorfor det kommer to gange, men det virker kun hvis det gør. Dette skal fixes
 
-.knap { //her defineres knappens størrelse
-  width: 80px;
-  height: 40px;
-}
 
-.knapFyld { //knappe fyldet.
-  width: 85px; //størrelse
-  height: 45px; //størrelse
-}
 
-.knapKant {//Denne del af knappen er lidt rodet
-  width: 80px; //størrelse
-  height: 40px;
-}
 
 /*-------------------------------------------------------------------------
 ----------------------------------Header & footer-----------------------
@@ -326,11 +330,6 @@ input:nth-last-child(1) {
   background-image: url("../images/produktbilledeTobias.png");
 }
 
-//gør at der ikke er krymmel bag teksten
-.indhold p {
-  background-color: rgba(247, 216, 136, 0.95);;
-}
-
 //Farven på knappen
 .knapFyld.showcase.tobias {
   background-color: $color-blue;
@@ -341,10 +340,55 @@ input:nth-last-child(1) {
 ---------------------------------------------------------------------------*/
 //Alt hvad der er anderledes i amalies showcase
 
+//farve og krymmel bag indhold
+.indhold.amalie {
+  background-color: $color-blue;
+  grid-column: 1/13;
+  background-image: url("../images/tobiaskrymmel.png");
+}
+
+//billede af amalie ansigt
+.ansigt.amalie {
+  background-image: url("../images/tobais.png");
+}
+
+//billede af amalie produktbillede
+.produktbillede.amalie {
+  background-image: url("../images/produktbilledeTobias.png");
+}
+
+//Farven på knappen
+.knapFyld.showcase.amalie {
+  background-color: $color-pink;
+}
+
 /*-------------------------------------------------------------------------
 ----------------------------------Frederik Showcase-----------------------
 ---------------------------------------------------------------------------*/
 //Alt hvad der er anderledes i Frederiks showcase
+
+//farve og krymmel bag indhold
+.indhold.frederik {
+  background-color: $color-pink;
+  grid-column: 1/13;
+  background-image: url("../images/tobiaskrymmel.png");
+}
+
+//billede af tobias ansigt
+.ansigt.frederik {
+  background-image: url("../images/tobais.png");
+}
+
+//billede af tobias produktbillede
+.produktbillede.frederik {
+  background-image: url("../images/produktbilledeTobias.png");
+}
+
+//Farven på knappen
+.knapFyld.showcase.frederik {
+  background-color: $color-blue;
+}
+
 
 /*================KONTRAST==============*/
 
@@ -406,16 +450,21 @@ font-size: 100%;
 
 
 
-@media screen and (min-width: 660px) {
-  // Alt over 660. Tablet og Desktop
+@media screen and (min-width: 600px) {
+  // Alt over 600. Tablet og Desktop
 
   /*================Forside===============*/
 
   /*================Showcase===============*/
 
   //Mangler kommentar. Værdier skal tweakes så de det passer bedre
-  .showcaseFlex {
+  .showcaseFlexamalie{ //gør at Amalies showcase på forsiden står omvnedt (billeder i højre side)
     display: flex;
+    flex-direction: row-reverse;
+  }
+
+  .showcaseFlex{
+    display:flex;
   }
 
   .showcaseBilleder {
@@ -433,16 +482,47 @@ font-size: 100%;
     min-width: 50%;
   }
 
+  h3 {
+    font-size: 13px;
+    padding: 30px 20px 30px 20px;
+  }
+
   /*================Personlige sider===============*/
 
 }
 
-@media screen and (min-width: 1600px) {
+@media screen and (min-width: 835px) {
+  //Alt over 835. For tekstens (navneboks h3) skyld.
+  h3 {
+    font-size: 18px;
+    padding: 30px;
+  }
+}
+
+@media screen and (min-width: 1186px) {
+  //Alt over 1186. For tekstens (navneboks h3) skyld.
+  h3 {
+    font-size: 28px;
+  }
+}
+
+@media screen and (min-width: 1500px) {
   // Meget store desktop skærme
 
   /*================Forside===============*/
 
   /*================Showcase===============*/
+
+  .showcaseBilleder {
+    width: 50%;
+    max-height: 800px;
+    max-width: 700px;
+  }
+
+  .firkant {
+    height: 50vw;
+    max-height: 400px;
+  }
 
   /*================Personlige sider===============*/
 

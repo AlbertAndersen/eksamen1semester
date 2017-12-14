@@ -317,7 +317,57 @@ input:nth-last-child(1) {
   .indhold {
     min-width: 50%; }
 
-  /*================Personlige sider===============*/ }
+  /*================Personlige sider===============*/
+  .hvemerjeg {
+    grid-column: 7/11;
+    margin-top: 55%; }
+
+  .hvadlaverjeg {
+    grid-column: 2/6; }
+
+  .mitarbejde {
+    grid-column: 1/13; }
+
+  .tobiastekst {
+    grid-column: 7/12;
+    max-width: 500px; }
+
+  .tobiastekst2 {
+    grid-column: 2/6;
+    max-width: 500px; }
+
+  .tobiasansigt2 {
+    grid-column: 8/12; }
+
+  .tobiasansigt {
+    grid-column: 2/6; }
+
+  .arbejde2, .arbejde3 {
+    grid-column: 3/11;
+    position: relative;
+    margin-bottom: 30%; }
+
+  .arbejde1 {
+    grid-column: 2/6;
+    position: relative;
+    margin-bottom: 30%; }
+
+  .arbejde2 {
+    grid-column: 8/12; }
+
+  .overlay1 {
+    position: absolute;
+    background-color: rgba(247, 216, 136, 0.8);
+    top: 50%;
+    left: 90%;
+    padding: 7%; }
+
+  .overlay2, .overlay3 {
+    position: absolute;
+    background-color: rgba(247, 216, 136, 0.8);
+    top: 70%;
+    left: 10%;
+    padding: 7%; } }
 @media screen and (min-width: 1600px) {
   /*================Forside===============*/
   /*================Showcase===============*/

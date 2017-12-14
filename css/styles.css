@@ -243,9 +243,26 @@ input:nth-last-child(1) {
   background-color: #ebb3df; }
 
 .kontrast {
-  height: 500px;
+  height: 600px;
   background-color: #ace9e3;
   clip-path: polygon(0 0, 100% 0, 100% 85%, 0% 100%); }
+
+.kontrastTekst {
+  margin: 10%;
+  max-width: 70%;
+  padding-left: 5%; }
+
+.kontrast1 {
+  font-family: Arial;
+  font-size: 200%; }
+
+.kontrast2 {
+  font-family: odin;
+  font-size: 150%; }
+
+.kontrast3 {
+  font-family: Arial;
+  font-size: 100%; }
 
 /*========================================================================
  ==============================Personlige sider===========================

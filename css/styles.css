@@ -26,6 +26,9 @@ h1, h2, h4, h5, h6 {
   text-transform: uppercase;
   font-weight: 100; }
 
+h5 {
+  padding: 0; }
+
 h3 {
   font-family: Arial;
   margin: 0;
@@ -293,9 +296,45 @@ input:nth-last-child(1) {
 /*========================================================================
  ==============================Personlige sider===========================
 =========================================================================*/
+.hvemerjeg {
+  grid-column: 1/13;
+  margin-top: 55%; }
+
+.hvadlaverjeg, .mitarbejde {
+  grid-column: 1/13; }
+
+.tobiastekst, .tobiastekst2 {
+  grid-column: 4/10;
+  margin-top: 15%;
+  max-width: 500px; }
+
+.tobiastekst2 {
+  margin-bottom: 15%; }
+
+.tobiasansigt, .tobiasansigt2 {
+  grid-column: 3/11; }
+
+.arbejde1, .arbejde2, .arbejde3 {
+  grid-column: 3/11;
+  position: relative;
+  margin-bottom: 30%; }
+
+.overlay1, .overlay2, .overlay3 {
+  position: absolute;
+  background-color: rgba(247, 216, 136, 0.8);
+  top: 70%;
+  left: 10%;
+  padding: 7%; }
+
 /*-------------------------------------------------------------------------
 ----------------------------------TOBIAS------------------------
 ---------------------------------------------------------------------------*/
+.baggrund {
+  background-color: #ace9e3; }
+
+.baggrund2 {
+  background-color: #f7d888; }
+
 /*-------------------------------------------------------------------------
 ----------------------------------Amalie------------------------
 ---------------------------------------------------------------------------*/
@@ -325,6 +364,60 @@ input:nth-last-child(1) {
   .indhold {
     min-width: 50%; }
 
+
+  /*================Personlige sider===============*/
+  .hvemerjeg {
+    grid-column: 7/11;
+    margin-top: 55%; }
+
+  .hvadlaverjeg {
+    grid-column: 2/6; }
+
+  .mitarbejde {
+    grid-column: 1/13; }
+
+  .tobiastekst {
+    grid-column: 7/12;
+    max-width: 500px; }
+
+  .tobiastekst2 {
+    grid-column: 2/6;
+    max-width: 500px; }
+
+  .tobiasansigt2 {
+    grid-column: 8/12; }
+
+  .tobiasansigt {
+    grid-column: 2/6; }
+
+  .arbejde2, .arbejde3 {
+    grid-column: 3/11;
+    position: relative;
+    margin-bottom: 30%; }
+
+  .arbejde1 {
+    grid-column: 2/6;
+    position: relative;
+    margin-bottom: 30%; }
+
+  .arbejde2 {
+    grid-column: 8/12; }
+
+  .overlay1 {
+    position: absolute;
+    background-color: rgba(247, 216, 136, 0.8);
+    top: 50%;
+    left: 90%;
+    padding: 7%; }
+
+  .overlay2, .overlay3 {
+    position: absolute;
+    background-color: rgba(247, 216, 136, 0.8);
+    top: 70%;
+    left: 10%;
+    padding: 7%; } }
+@media screen and (min-width: 1600px) {
+
   h3 {
     font-size: 13px;
     padding: 30px 20px 30px 20px; }
@@ -338,6 +431,7 @@ input:nth-last-child(1) {
   h3 {
     font-size: 28px; } }
 @media screen and (min-width: 1500px) {
+
   /*================Forside===============*/
   /*================Showcase===============*/
   .showcaseBilleder {

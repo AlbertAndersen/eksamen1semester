@@ -42,6 +42,10 @@ h1, h2, h4, h5, h6 {
   font-weight: 100; //fikser problem med font vægt nogen steder
 }
 
+h5{
+  padding: 0;
+}
+
 // h3 står for sig selv fordi den skal være arial
 h3  {
   font-family: Arial;
@@ -265,7 +269,7 @@ input:nth-last-child(1) {
   position: relative;
 }
 
-//Navn overlay placeres ved brug er absolute position og top/left
+//Navn overlay placeres ved brug af absolute position og top/left
 .navnOverlay {
   position: absolute;
   background-color: rgba(247, 216, 136, 0.8); //farven på overlay med gennemsigtighed
@@ -426,13 +430,59 @@ font-size: 100%;
  ==============================Personlige sider===========================
 =========================================================================*/
 
-//Her står alt som de personlige sider har tilfældes
+//Her står alt som de personlige sider har tilfælles
 
+
+.hvemerjeg{
+  grid-column: 1/13;
+  margin-top: 55%;
+}
+
+.hvadlaverjeg, .mitarbejde{
+  grid-column: 1/13;
+}
+.tobiastekst, .tobiastekst2{
+ grid-column: 4/10;
+  margin-top: 15%;
+  max-width: 500px; //begrænser hvor meget teksten kan fylde
+}
+
+.tobiastekst2{
+  margin-bottom: 15%; //for at der er luft ned til næste afsnit
+}
+
+.tobiasansigt, .tobiasansigt2{
+  grid-column: 3/11;
+}
+
+.arbejde1, .arbejde2, .arbejde3{
+  grid-column: 3/11;
+  position: relative; //så billedet er nederst
+  margin-bottom: 30%;
+}
+
+.overlay1, .overlay2, .overlay3{
+  position: absolute; //så overlayet kan komme ovenpå
+  background-color: rgba(247, 216, 136, 0.8); //farven på overlay med gennemsigtighed
+  top: 70%;
+  left: 10%; //måske skal det bare centreres
+  padding: 7%; //så teksten ikke står helt ud til kanten
+
+
+}
 /*-------------------------------------------------------------------------
 ----------------------------------TOBIAS------------------------
 ---------------------------------------------------------------------------*/
 
 //Her står alt som kun er på tobiases side
+
+.baggrund{
+  background-color: $color-blue;
+}
+
+.baggrund2{
+  background-color: $color-yellow;
+}
 
 /*-------------------------------------------------------------------------
 ----------------------------------Amalie------------------------
@@ -488,6 +538,70 @@ font-size: 100%;
   }
 
   /*================Personlige sider===============*/
+  //Tobias
+
+  .hvemerjeg{
+    grid-column: 7/11;
+    margin-top: 55%;
+  }
+
+  .hvadlaverjeg{
+    grid-column: 2/6;
+  }
+
+  .mitarbejde{
+    grid-column: 1/13;
+  }
+
+  .tobiastekst{
+    grid-column: 7/12;
+    max-width: 500px; //begrænser hvor meget teksten kan fylde
+  }
+
+  .tobiastekst2{
+    grid-column: 2/6;
+    max-width: 500px; //begrænser hvor meget teksten kan fylde
+  }
+
+  .tobiasansigt2{
+    grid-column: 8/12;
+  }
+
+  .tobiasansigt{
+    grid-column: 2/6;
+  }
+
+ .arbejde2, .arbejde3{
+    grid-column: 3/11;
+    position: relative; //så billedet er nederst
+    margin-bottom: 30%;
+  }
+
+  .arbejde1{
+    grid-column: 2/6;
+    position: relative; //så billedet er nederst
+    margin-bottom: 30%;
+  }
+
+  .arbejde2{
+    grid-column: 8/12;
+  }
+
+  .overlay1{
+    position: absolute; //så overlayet kan komme ovenpå
+    background-color: rgba(247, 216, 136, 0.8); //farven på overlay med gennemsigtighed
+    top: 50%;
+    left: 90%; //måske skal det bare centreres
+    padding: 7%; //så teksten ikke står helt ud til kanten
+  }
+
+  .overlay2, .overlay3{
+    position: absolute; //så overlayet kan komme ovenpå
+    background-color: rgba(247, 216, 136, 0.8); //farven på overlay med gennemsigtighed
+    top: 70%;
+    left: 10%; //måske skal det bare centreres
+    padding: 7%; //så teksten ikke står helt ud til kanten
+  }
 
 }
 
@@ -525,6 +639,17 @@ font-size: 100%;
   }
 
   /*================Personlige sider===============*/
+
+
+
+
+
+
+
+
+
+
+
 
 }
 

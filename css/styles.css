@@ -70,6 +70,9 @@ img {
 .overlaypink {
   background-color: rgba(235, 179, 223, 0.95); }
 
+.overlayviolet {
+  background-color: rgba(145, 149, 241, 0.95); }
+
 /*================knappen================*/
 .flex {
   display: flex;
@@ -113,10 +116,12 @@ img {
 ---------------------------------------------------------------------------*/
 /*================HEADER===============*/
 .header {
-  background-color: #f7d888;
   height: 400px;
   background-image: none;
   background-size: cover; }
+
+.header.forside {
+  background-color: #f7d888; }
 
 .logo {
   height: 300px;
@@ -245,7 +250,7 @@ input:nth-last-child(1) {
 ----------------------------------Amalie showcase-----------------------
 ---------------------------------------------------------------------------*/
 .indhold.amalie {
-  background-color: #ace9e3;
+  background-color: #9195f1;
   grid-column: 1/13;
   background-image: url("../images/tobiaskrymmel.png"); }
 
@@ -256,7 +261,7 @@ input:nth-last-child(1) {
   background-image: url("../images/produktbilledeTobias.png"); }
 
 .knapFyld.showcase.amalie {
-  background-color: #ebb3df; }
+  background-color: #ace9e3; }
 
 /*-------------------------------------------------------------------------
 ----------------------------------Frederik Showcase-----------------------
@@ -350,6 +355,9 @@ input:nth-last-child(1) {
 /*-------------------------------------------------------------------------
 ----------------------------------Amalie------------------------
 ---------------------------------------------------------------------------*/
+.header.amalieheader {
+  background-color: #9195f1; }
+
 /*-------------------------------------------------------------------------
 ----------------------------------Frederik------------------------
 ---------------------------------------------------------------------------*/

@@ -1,10 +1,222 @@
 <!DOCTYPE html>
-<html lang="en">
+<!-- Fortæller det er html5 -->
+<!-- html starter og slutter hele dokumentet / lang=da: Fortæller siden er på dansk -->
+<html lang="da">
+
+<!-- I <head> har man opsætning - alt det som man ikke ser som selve indholdet -->
 <head>
-    <meta charset="UTF-8">
-    <title>Title</title>
+
+    <!-- Sætter tegnsætning til utf-8 som bl.a. tillader danske bogstaver -->
+    <meta charset="utf-8">
+
+    <!-- Titel som ses oppe i browserens tab mv. -->
+    <title>Chocolate Club - Tobias</title>
+
+    <!-- Metatags der fortæller at søgemaskiner er velkomne, hvem der udgiver siden og copyright information -->
+    <meta name="robots" content="All">
+    <meta name="author" content="Udgiver">
+    <meta name="copyright" content="Information om copyright">
+
+    <!-- Sikrer man kan benytte CSS ved at tilkoble en CSS fil -->
+    <link rel="stylesheet" href="../css/hamburgers.css">
+    <link href="../css/styles.css" rel="stylesheet" type="text/css">
+    <script src="https://use.fontawesome.com/75970a48c3.js"></script>
+    <script src="../javascript/script.js"></script>
+
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script type="text/javascript" src="../javascript/smoothscroll.js"> </script>
+
+    <!-- Sikrer den vises korrekt på mobil, tablet mv. ved at tage ift. skærmstørrelse -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
 </head>
+
+<!-- i <body> har man alt indhold på siden -->
 <body>
 
+<!--- Menu Overlay. Dette er skjult indtil man aktivere det med javascript ----->
+
+<div id="myNav" class="overlay">
+
+    <!-- Overlay content. De links der kommer frem -->
+    <div class="overlay-content">
+
+        <a href="../index.html">FORSIDE</a>
+        <a href="#top"onclick="closeNav()" class="smoothScroll">TOBIAS TRADS</a>
+        <a href="amalie.html">AMALIE VON SCHRAM</a>
+        <a href="Frederik.html">FREDERIK WOLMER</a>
+        <!-- Skal lukke overlay og sender folk til bunden af side -->
+        <a href="#footer" onclick="closeNav()" class="smoothScroll">KONTAKT</a>
+
+    </div>
+</div>
+
+
+<!--- HEADER ------->
+<div class="header amalieheader">
+
+    <a name="top"></a>
+
+    <!-- Det her er knappen der åbner og lukker menuen. -->
+    <button class="hamburger hamburger--spring" type="button" >
+
+        <span class="hamburger-box">
+        <span class="hamburger-inner"></span>
+        </span>
+
+    </button>
+
+    <!-- her er javascript der åbner og lukker menuen -->
+    <script>
+        // leder efter noget med klassen .hamburger
+        var hamburger = document.querySelector(".hamburger");
+
+        // gør at der sker noget når man klikker på .hamburger
+        hamburger.addEventListener("click", function() {
+
+            //her er et if else statement
+
+            //hvis .hamburger har klassen is-active sættes værdien på overlay width til 0%
+            if (hamburger.classList.contains("is-active")) {
+                document.getElementById("myNav").style.width = "0%";
+                //ellers sættes værdien til 100%
+            } else {
+                document.getElementById("myNav").style.width = "100%";
+            }
+            //skifter mellem at knappen med .hamburger har klassen "is-active"
+            hamburger.classList.toggle("is-active");
+        });
+    </script>
+
+    <!-- Her er en div som jeg har givet en width, height og border. så den kan bruges som placeholder -->
+    <div class="logo">
+
+    </div>
+
+</div>
+
+<!---Her fortæller Tobias om sig selv og sit arbejde -->
+<div class="omtobias">
+    <div class="baggrundtobias grid"> <!-- farvet boks -->
+
+
+        <h2 class="hvemerjeg">Hvem er jeg?</h2>
+
+        <div class="tobiasansigt"><img src="../images/amalieansigt.png"/></div>
+
+
+        <div class="tobiastekst"> Jeg er 26 år og har en brændende passion for kager og chokolade.
+            For 6 år siden blev jeg færdiguddannet som konditor og har siden valgt at fokusere specifikt på kager til børn.
+            Det vigtigste for mig er at levere en skræddersyet løsning der sætter et smil på dit barns ansigt.</div>
+
+        <div class="space"></div>
+
+        <h2 class="hvadlaverjeg">Hvad laver jeg?</h2>
+
+        <div class="tobiasansigt2"><img src="../images/hvadlaverjegamalie.png"/></div>
+
+
+        <div class="tobiastekst2">Jeg laver unikke kager der passer lige til dit barns interesser,
+            uanset om det er figurformet kage, en scene eller noget helt tredje.
+            Kontakt mig via formularen for at høre om hvad jeg kan gøre for dig.</div>
+    </div>
+</div>
+
+<div class="tobiasarbejde">
+
+    <div class="baggrund2tobias grid"> <!-- Farvet boks-->
+
+        <h6 class="mitarbejde">Mit arbejde</h6>
+
+        <div class="arbejde1"><img src="../images/tobais.png"/>
+            <!-- Her laves en div hvor både billed og overlay er inde i.
+            Det gør at man kan placere dem oven i hinanden-->
+            <div class="overlay1">
+                <h2 class="zeroPadding">Vilde kager</h2>
+                Her har jeg f.eks. lavet en kage til en 6 års fødselsdag, med et prinsessestema.
+            </div>
+        </div>
+
+
+        <div class="arbejde2"><img class="rightPic" src="../images/tobais.png"/>
+            <div class="overlay2">
+                <h2 class="zeroPadding">Farverige kager</h2>
+                Her har jeg lavet en kage til en 10 års fødselsdag hvor fødselsdagsbarnet elsker blomster.
+            </div>
+        </div>
+
+        <div class="arbejde3"><img src="../images/tobais.png"/>
+            <div class="overlay3">
+                <h2 class="zeroPadding">Dåbskager</h2>
+                Her har jeg lavet en dåbskage til en familie der ønskede et royalt tema til deres lille dreng.
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--- Kontaktform & footer------->
+
+
+<div class="footer forside">
+
+    <!--Destination fra menu-->
+    <a name="footer"></a>
+
+    <h1>KONTAKT OS</h1>
+
+    <!--- Kontaktform som bruger grid til at placering------->
+    <div class="kontaktForm grid">
+
+        <!--- Input felter------->
+        <input type="text" placeholder="NAVN*">
+        <input type="text" placeholder="EMAIL*">
+        <input type="text" placeholder="EMNE*">
+        <input type="text" placeholder="BESKED*">
+
+    </div>
+
+    <!--- Denne knap var mega svær at lave.... Men den virker nu, og det er det vigtigeste---->
+    <!--- Klassen flex er for at centrere --->
+    <div class="flex">
+
+        <!--- knappen laves her -->
+        <div class="knap sendknap">
+
+            <!--- Fyldes laves her, som så bliver forskudt i forhold til kanten -->
+            <div class="knapFyld">
+
+                <!--- Her lavesen kant, fordi ellers ligger fyldet ovenpå kanten -->
+                <div class="knapKant">
+
+                    <!--- Her er selve knappen --->
+                    <a href="#" class="knapTekst">SEND </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!---Navnet bund beskriver at det er bunden af footeren ------->
+    <Div class="bund">
+
+        <div class="kontaktinfo">
+
+            <!--- "ELLER" Har sin egen klasse fordi den skal styles anderledes ------->
+            <P class="eller">ELLER</P>
+            <P>KONTAKT@CHOCOLATECLUB.DK</P>
+            <P>VEJEN 3, KØBENHAVN </P>
+            <P>+45 39 29 48 23</P>
+
+        </div>
+
+        <!---Alle socialmedie ikoner ------->
+        <div class="some">
+
+            <i class="fa fa-facebook-square fa-2x"></i>
+            <i class="fa fa-instagram fa-2x"></i>
+            <i class="fa fa-pinterest-square fa-2x"></i>
+
+        </div>
+    </Div>
+</div>
 </body>
 </html>

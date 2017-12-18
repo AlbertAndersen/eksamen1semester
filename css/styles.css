@@ -280,22 +280,23 @@ input:nth-last-child(1) {
   background-color: #ebb3df; }
 
 .kontrast {
-  height: 600px;
   background-color: #ace9e3;
   clip-path: polygon(0 0, 100% 0, 100% 85%, 0% 100%); }
 
 .kontrastTekst {
-  margin: 10%;
-  max-width: 70%;
-  padding-left: 5%; }
+  margin: 0 5%;
+  padding: 100px 0 250px; }
 
 .kontrast1 {
   font-family: Arial;
-  font-size: 200%; }
+  font-size: 10vw;
+  font-weight: 900; }
 
 .kontrast2 {
-  font-family: odin;
-  font-size: 150%; }
+  font-family: Arial;
+  font-size: 8vw;
+  font-weight: 100;
+  font-style: italic; }
 
 .kontrast3 {
   font-family: Arial;

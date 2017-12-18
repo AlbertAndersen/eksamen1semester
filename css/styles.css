@@ -26,12 +26,16 @@ h1, h2, h4, h5, h6 {
   text-transform: uppercase;
   font-weight: 100; }
 
+h2 {
+  font-size: 34px; }
+
 h5 {
   padding: 0; }
 
 h6 {
-  font-size: 60px;
-  font-family: Arial; }
+  font-size: 54px;
+  font-family: Arial;
+  padding: 100px 0; }
 
 h3 {
   font-family: Arial;
@@ -86,7 +90,7 @@ img {
 
 .knapFyld {
   position: absolute;
-  background-color: #80cbc4;
+  background-color: #f7d888;
   left: 5px;
   top: 5px;
   width: 85px;
@@ -109,7 +113,7 @@ img {
 ---------------------------------------------------------------------------*/
 /*================HEADER===============*/
 .header {
-  background-color: #80cbc4;
+  background-color: #f7d888;
   height: 400px;
   background-image: none;
   background-size: cover; }
@@ -127,7 +131,7 @@ input {
   margin: 20px 0px;
   grid-column: 3/11;
   border: none;
-  background-color: #80cbc4;
+  background-color: #f7d888;
   color: white;
   font-size: 16px;
   height: 30px;
@@ -224,7 +228,7 @@ input:nth-last-child(1) {
 ----------------------------------Tobias showcase------------------------
 ---------------------------------------------------------------------------*/
 .indhold.tobias {
-  background-color: #80cbc4;
+  background-color: #f7d888;
   grid-column: 1/13;
   background-image: url("../images/tobiaskrymmel.png"); }
 
@@ -302,21 +306,20 @@ input:nth-last-child(1) {
 =========================================================================*/
 .hvemerjeg {
   grid-column: 1/13;
-  margin-top: 55%; }
+  margin-top: 200px; }
 
 .hvadlaverjeg, .mitarbejde {
   grid-column: 1/13; }
 
 .tobiastekst, .tobiastekst2 {
-  grid-column: 4/10;
-  margin-top: 15%;
-  max-width: 500px; }
+  grid-column: 2/12;
+  margin: 50px 0; }
 
 .tobiastekst2 {
-  margin-bottom: 15%; }
+  margin-bottom: 100px; }
 
 .tobiasansigt, .tobiasansigt2 {
-  grid-column: 3/11; }
+  grid-column: 4/10; }
 
 .arbejde1, .arbejde2, .arbejde3 {
   grid-column: 3/11;
@@ -336,11 +339,12 @@ input:nth-last-child(1) {
 /*-------------------------------------------------------------------------
 ----------------------------------TOBIAS------------------------
 ---------------------------------------------------------------------------*/
-.baggrund {
+.baggrundtobias {
   background-color: #ace9e3; }
 
-.baggrund2 {
-  background-color: #80cbc4; }
+.baggrund2tobias {
+  background-color: #f7d888;
+  background-image: url("../images/tobiaskrymmel.png"); }
 
 /*-------------------------------------------------------------------------
 ----------------------------------Amalie------------------------
@@ -403,7 +407,50 @@ input:nth-last-child(1) {
     width: 40vw; }
 
   .rightPic {
-    margin: 0 0 0 auto; } }
+    margin: 0 0 0 auto; }
+
+  .hvemerjeg, .tobiasansigt, .tobiastekst {
+    grid-row: 1/1; }
+
+  .tobiasansigt {
+    grid-column: 2/6; }
+
+  .tobiastekst {
+    margin: 0;
+    margin-top: 100px;
+    padding: 0px 0px 50px 50px; }
+
+  .hvemerjeg, .tobiastekst {
+    grid-column: 6/12; }
+
+  .hvemerjeg {
+    margin: 0;
+    padding: 0px 0px 50px 50px; }
+
+  .space {
+    grid-row: 2/2;
+    margin: 50px; }
+
+  .hvadlaverjeg, .tobiasansigt2, .tobiastekst2 {
+    grid-row: 3/3; }
+
+  .tobiasansigt2 {
+    grid-column: 8/12; }
+
+  .tobiastekst2 {
+    margin: 0;
+    margin-top: 100px;
+    padding: 0px 50px 50px 0; }
+
+  .hvadlaverjeg, .tobiastekst2 {
+    grid-column: 2/8; }
+
+  .hvadlaverjeg {
+    margin: 0;
+    padding: 0px 50px 50px 0; }
+
+  .baggrundtobias {
+    padding: 300px 0px 100px 0px; } }
 @media screen and (min-width: 835px) {
   h3 {
     font-size: 18px;
@@ -419,7 +466,10 @@ input:nth-last-child(1) {
     left: 350px; } }
 @media screen and (min-width: 1186px) {
   h3 {
-    font-size: 28px; } }
+    font-size: 28px; }
+
+  .overlay2 {
+    left: -200px; } }
 @media screen and (min-width: 1500px) {
   /*================Forside===============*/
   /*================Showcase===============*/
@@ -432,7 +482,9 @@ input:nth-last-child(1) {
     height: 50vw;
     max-height: 400px; }
 
-  /*================Personlige sider===============*/ }
+  /*================Personlige sider===============*/
+  .overlay2 {
+    left: -100px; } }
 /*================BURGER MENU===============*/
 .hamburger {
   z-index: 2;

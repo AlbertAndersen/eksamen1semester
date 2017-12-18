@@ -62,16 +62,16 @@ img {
   box-shadow: -18px 18px 41px -18px rgba(0, 0, 0, 0.28); }
 
 .overlayyellow {
-  background-color: rgba(247, 216, 136, 0.95); }
+  background-color: rgba(247, 216, 136, 0.8); }
 
 .overlayblue {
-  background-color: rgba(172, 233, 227, 0.95); }
+  background-color: rgba(172, 233, 227, 0.8); }
 
 .overlaypink {
-  background-color: rgba(235, 179, 223, 0.95); }
+  background-color: rgba(235, 179, 223, 0.8); }
 
 .overlayviolet {
-  background-color: rgba(145, 149, 241, 0.95); }
+  background-color: rgba(145, 149, 241, 0.8); }
 
 /*================knappen================*/
 .flex {
@@ -149,8 +149,11 @@ input:nth-last-child(1) {
 .sendknap {
   margin-top: 75px; }
 
-.footer {
+.footer.forside {
   background-color: #ebb3df; }
+
+.footer.underside {
+  background-color: #ace9e3; }
 
 .bund {
   text-align: center;
@@ -334,7 +337,6 @@ input:nth-last-child(1) {
 
 .overlay1, .overlay2, .overlay3 {
   position: absolute;
-  background-color: rgba(247, 216, 136, 0.8);
   top: 85%;
   left: 0%;
   padding: 7%; }
@@ -357,6 +359,10 @@ input:nth-last-child(1) {
 ---------------------------------------------------------------------------*/
 .header.amalieheader {
   background-color: #9195f1; }
+
+.baggrund2amalie {
+  background-color: #9195f1;
+  background-image: url("../images/tobiaskrymmel.png"); }
 
 /*-------------------------------------------------------------------------
 ----------------------------------Frederik------------------------

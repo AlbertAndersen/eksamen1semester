@@ -97,16 +97,16 @@ $color-violet: #9195f1;
 
 //overlay med farverne og gennemsigtighed, så tekst er mere synligt ved krymmel
 .overlayyellow {
-  background-color: rgba(247,216,136,0.95);
+  background-color: rgba(247,216,136,0.8);
 }
 .overlayblue {
-  background-color: rgba(172,233,227,0.95);
+  background-color: rgba(172,233,227,0.8);
 }
 .overlaypink {
-  background-color: rgba(235,179,223,0.95);
+  background-color: rgba(235,179,223,0.8);
 }
 .overlayviolet {
-  background-color: rgba(145,149,241,0.95);
+  background-color: rgba(145,149,241,0.8);
 }
 
 
@@ -215,8 +215,12 @@ input:nth-last-child(1) {
   margin-top: 75px;
 }
 
-.footer {
+.footer.forside{
   background-color: $color-pink;
+}
+
+.footer.underside{
+  background-color: $color-blue;
 }
 
 //Dette er alt kontakt info font styling
@@ -482,7 +486,6 @@ input:nth-last-child(1) {
 
 .overlay1, .overlay2, .overlay3{
   position: absolute; //så overlayet kan komme ovenpå
-  background-color: rgba(247, 216, 136, 0.8); //farven på overlay med gennemsigtighed
   top: 85%;
   left: 0%; //måske skal det bare centreres
   padding: 7%; //så teksten ikke står helt ud til kanten
@@ -515,6 +518,11 @@ input:nth-last-child(1) {
 
 .header.amalieheader{
   background-color: $color-violet;
+}
+
+.baggrund2amalie{
+  background-color: $color-violet;
+  background-image: url("../images/tobiaskrymmel.png");
 }
 
 /*-------------------------------------------------------------------------

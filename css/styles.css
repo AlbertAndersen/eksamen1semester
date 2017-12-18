@@ -29,6 +29,10 @@ h1, h2, h4, h5, h6 {
 h5 {
   padding: 0; }
 
+h6 {
+  font-size: 60px;
+  font-family: Arial; }
+
 h3 {
   font-family: Arial;
   margin: 0;
@@ -82,7 +86,7 @@ img {
 
 .knapFyld {
   position: absolute;
-  background-color: #f7d888;
+  background-color: #80cbc4;
   left: 5px;
   top: 5px;
   width: 85px;
@@ -105,7 +109,7 @@ img {
 ---------------------------------------------------------------------------*/
 /*================HEADER===============*/
 .header {
-  background-color: #f7d888;
+  background-color: #80cbc4;
   height: 400px;
   background-image: none;
   background-size: cover; }
@@ -123,7 +127,7 @@ input {
   margin: 20px 0px;
   grid-column: 3/11;
   border: none;
-  background-color: #f7d888;
+  background-color: #80cbc4;
   color: white;
   font-size: 16px;
   height: 30px;
@@ -220,7 +224,7 @@ input:nth-last-child(1) {
 ----------------------------------Tobias showcase------------------------
 ---------------------------------------------------------------------------*/
 .indhold.tobias {
-  background-color: #f7d888;
+  background-color: #80cbc4;
   grid-column: 1/13;
   background-image: url("../images/tobiaskrymmel.png"); }
 
@@ -322,9 +326,12 @@ input:nth-last-child(1) {
 .overlay1, .overlay2, .overlay3 {
   position: absolute;
   background-color: rgba(247, 216, 136, 0.8);
-  top: 70%;
-  left: 10%;
+  top: 85%;
+  left: 0%;
   padding: 7%; }
+
+.zeroPadding {
+  padding: 0 0 30px 0; }
 
 /*-------------------------------------------------------------------------
 ----------------------------------TOBIAS------------------------
@@ -333,7 +340,7 @@ input:nth-last-child(1) {
   background-color: #ace9e3; }
 
 .baggrund2 {
-  background-color: #f7d888; }
+  background-color: #80cbc4; }
 
 /*-------------------------------------------------------------------------
 ----------------------------------Amalie------------------------
@@ -364,74 +371,56 @@ input:nth-last-child(1) {
   .indhold {
     min-width: 50%; }
 
-
-  /*================Personlige sider===============*/
-  .hvemerjeg {
-    grid-column: 7/11;
-    margin-top: 55%; }
-
-  .hvadlaverjeg {
-    grid-column: 2/6; }
-
-  .mitarbejde {
-    grid-column: 1/13; }
-
-  .tobiastekst {
-    grid-column: 7/12;
-    max-width: 500px; }
-
-  .tobiastekst2 {
-    grid-column: 2/6;
-    max-width: 500px; }
-
-  .tobiasansigt2 {
-    grid-column: 8/12; }
-
-  .tobiasansigt {
-    grid-column: 2/6; }
-
-  .arbejde2, .arbejde3 {
-    grid-column: 3/11;
-    position: relative;
-    margin-bottom: 30%; }
-
-  .arbejde1 {
-    grid-column: 2/6;
-    position: relative;
-    margin-bottom: 30%; }
-
-  .arbejde2 {
-    grid-column: 8/12; }
-
-  .overlay1 {
-    position: absolute;
-    background-color: rgba(247, 216, 136, 0.8);
-    top: 50%;
-    left: 90%;
-    padding: 7%; }
-
-  .overlay2, .overlay3 {
-    position: absolute;
-    background-color: rgba(247, 216, 136, 0.8);
-    top: 70%;
-    left: 10%;
-    padding: 7%; } }
-@media screen and (min-width: 1600px) {
-
   h3 {
     font-size: 13px;
     padding: 30px 20px 30px 20px; }
 
-  /*================Personlige sider===============*/ }
+  /*================Personlige sider===============*/
+  .arbejde1 {
+    grid-column: 2/8; }
+
+  .arbejde2 {
+    grid-column: 6/12; }
+
+  .arbejde3 {
+    grid-column: 2/8; }
+
+  .overlay1 {
+    left: 70%;
+    top: 20%;
+    width: 40vw;
+    max-width: 450px; }
+
+  .overlay2 {
+    left: -70%;
+    top: 20%;
+    width: 40vw;
+    max-width: 450px; }
+
+  .overlay3 {
+    left: 70%;
+    top: 20%;
+    width: 40vw; }
+
+  .rightPic {
+    margin: 0 0 0 auto; } }
 @media screen and (min-width: 835px) {
   h3 {
     font-size: 18px;
-    padding: 30px; } }
+    padding: 30px; }
+
+  .overlay1 {
+    left: 350px; }
+
+  .overlay2 {
+    left: -350px; }
+
+  .overlay3 {
+    left: 350px; } }
 @media screen and (min-width: 1186px) {
   h3 {
     font-size: 28px; } }
 @media screen and (min-width: 1500px) {
-
   /*================Forside===============*/
   /*================Showcase===============*/
   .showcaseBilleder {

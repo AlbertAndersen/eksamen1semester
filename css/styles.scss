@@ -46,6 +46,11 @@ h5{
   padding: 0;
 }
 
+h6 {
+  font-size: 60px;
+  font-family: Arial;
+}
+
 // h3 står for sig selv fordi den skal være arial
 h3  {
   font-family: Arial;
@@ -68,7 +73,7 @@ img {
 }
 
 //Farve variabler
-$color-yellow: #f7d888;
+$color-yellow: #80cbc4;
 $color-blue: #ace9e3;
 $color-pink: #ebb3df;
 
@@ -464,11 +469,14 @@ font-size: 100%;
 .overlay1, .overlay2, .overlay3{
   position: absolute; //så overlayet kan komme ovenpå
   background-color: rgba(247, 216, 136, 0.8); //farven på overlay med gennemsigtighed
-  top: 70%;
-  left: 10%; //måske skal det bare centreres
+  top: 85%;
+  left: 0%; //måske skal det bare centreres
   padding: 7%; //så teksten ikke står helt ud til kanten
 
+}
 
+.zeroPadding{
+  padding: 0 0 30px 0;
 }
 /*-------------------------------------------------------------------------
 ----------------------------------TOBIAS------------------------
@@ -540,68 +548,46 @@ font-size: 100%;
   /*================Personlige sider===============*/
   //Tobias
 
-  .hvemerjeg{
-    grid-column: 7/11;
-    margin-top: 55%;
+  .arbejde1 {
+    grid-column: 2/8;
+
   }
 
-  .hvadlaverjeg{
-    grid-column: 2/6;
+  .arbejde2 {
+    grid-column: 6/12;
+
   }
 
-  .mitarbejde{
-    grid-column: 1/13;
+  .arbejde3 {
+    grid-column: 2/8;
   }
 
-  .tobiastekst{
-    grid-column: 7/12;
-    max-width: 500px; //begrænser hvor meget teksten kan fylde
+  .overlay1 {
+      left: 70%;
+      top: 20%;
+      width: 40vw;
+      max-width: 450px;
+    }
+
+  .overlay2 {
+    left: -70% ;
+    top: 20%;
+    width: 40vw;
+    max-width: 450px;
   }
 
-  .tobiastekst2{
-    grid-column: 2/6;
-    max-width: 500px; //begrænser hvor meget teksten kan fylde
+  .overlay3 {
+    left: 70%;
+    top: 20%;
+    width: 40vw;
   }
 
-  .tobiasansigt2{
-    grid-column: 8/12;
+  .rightPic {
+    margin: 0 0 0 auto;
   }
 
-  .tobiasansigt{
-    grid-column: 2/6;
-  }
 
- .arbejde2, .arbejde3{
-    grid-column: 3/11;
-    position: relative; //så billedet er nederst
-    margin-bottom: 30%;
-  }
 
-  .arbejde1{
-    grid-column: 2/6;
-    position: relative; //så billedet er nederst
-    margin-bottom: 30%;
-  }
-
-  .arbejde2{
-    grid-column: 8/12;
-  }
-
-  .overlay1{
-    position: absolute; //så overlayet kan komme ovenpå
-    background-color: rgba(247, 216, 136, 0.8); //farven på overlay med gennemsigtighed
-    top: 50%;
-    left: 90%; //måske skal det bare centreres
-    padding: 7%; //så teksten ikke står helt ud til kanten
-  }
-
-  .overlay2, .overlay3{
-    position: absolute; //så overlayet kan komme ovenpå
-    background-color: rgba(247, 216, 136, 0.8); //farven på overlay med gennemsigtighed
-    top: 70%;
-    left: 10%; //måske skal det bare centreres
-    padding: 7%; //så teksten ikke står helt ud til kanten
-  }
 
 }
 
@@ -610,6 +596,16 @@ font-size: 100%;
   h3 {
     font-size: 18px;
     padding: 30px;
+  }
+
+  .overlay1 {
+    left: 350px;
+  }
+  .overlay2 {
+    left: -350px;
+  }
+  .overlay3 {
+    left: 350px;
   }
 }
 
@@ -639,17 +635,6 @@ font-size: 100%;
   }
 
   /*================Personlige sider===============*/
-
-
-
-
-
-
-
-
-
-
-
 
 }
 

@@ -81,6 +81,7 @@ img {
 $color-yellow: #f7d888;
 $color-blue: #ace9e3;
 $color-pink: #ebb3df;
+$color-violet: #9195f1;
 
 //12 column grid
 .grid {
@@ -95,14 +96,17 @@ $color-pink: #ebb3df;
 }
 
 //overlay med farverne og gennemsigtighed, så tekst er mere synligt ved krymmel
-.overlayyellow{
-  background-color: rgba(247,216,136,0.95);
+.overlayyellow {
+  background-color: rgba(247,216,136,0.8);
 }
-.overlayblue{
-  background-color: rgba(172,233,227,0.95);
+.overlayblue {
+  background-color: rgba(172,233,227,0.8);
 }
-.overlaypink{
-  background-color: rgba(235,179,223,0.95);
+.overlaypink {
+  background-color: rgba(235,179,223,0.8);
+}
+.overlayviolet {
+  background-color: rgba(145,149,241,0.8);
 }
 
 
@@ -165,10 +169,12 @@ $color-pink: #ebb3df;
 /*================HEADER===============*/
 
 .header { //farve og længde på header sektionen
-  background-color: $color-yellow;
   height: 400px; // Højden på headeren. Hvis denne ændres skal .logo { top } også ændres
   background-image: none; // her skal der være et billede
   background-size: cover; //fylder headeren ud
+}
+.header.forside{
+  background-color: $color-yellow;
 }
 
 .logo { // placeholder for logoet
@@ -209,8 +215,12 @@ input:nth-last-child(1) {
   margin-top: 75px;
 }
 
-.footer {
+.footer.forside{
   background-color: $color-pink;
+}
+
+.footer.underside{
+  background-color: $color-blue;
 }
 
 //Dette er alt kontakt info font styling
@@ -356,7 +366,7 @@ input:nth-last-child(1) {
 
 //farve og krymmel bag indhold
 .indhold.amalie {
-  background-color: $color-blue;
+  background-color: $color-violet;
   grid-column: 1/13;
   background-image: url("../images/tobiaskrymmel.png");
 }
@@ -373,7 +383,7 @@ input:nth-last-child(1) {
 
 //Farven på knappen
 .knapFyld.showcase.amalie {
-  background-color: $color-pink;
+  background-color: $color-blue;
 }
 
 /*-------------------------------------------------------------------------
@@ -476,7 +486,6 @@ input:nth-last-child(1) {
 
 .overlay1, .overlay2, .overlay3{
   position: absolute; //så overlayet kan komme ovenpå
-  background-color: rgba(247, 216, 136, 0.8); //farven på overlay med gennemsigtighed
   top: 85%;
   left: 0%; //måske skal det bare centreres
   padding: 7%; //så teksten ikke står helt ud til kanten
@@ -507,11 +516,30 @@ input:nth-last-child(1) {
 
 //Her står alt som kun er på Amalies side
 
+.header.amalieheader{
+  background-color: $color-violet;
+}
+
+.baggrund2amalie{
+  background-color: $color-violet;
+  background-image: url("../images/tobiaskrymmel.png");
+}
+
 /*-------------------------------------------------------------------------
 ----------------------------------Frederik------------------------
 ---------------------------------------------------------------------------*/
 
 //Her står alt som kun er på Frederiks side
+
+.header.frederikheader{
+  background-color: $color-pink;
+}
+
+.baggrund2frederik{
+  background-color: $color-pink;
+  background-image: url("../images/tobiaskrymmel.png");
+}
+
 
 /*================Responsivitet===============*/
 

@@ -180,7 +180,6 @@ $color-violet: #9195f1;
 .logo { // placeholder for logoet
   height: 300px;
   width: 300px;
-  border: solid white 6px;
   position: relative;
   top: 62%;
   margin: auto
@@ -292,7 +291,6 @@ input:nth-last-child(1) {
 //Navn overlay placeres ved brug af absolute position og top/left
 .navnOverlay {
   position: absolute;
-  background-color: rgba(247, 216, 136, 0.8); //farven på overlay med gennemsigtighed
   top: 60%;
   left: 10%; //måske skal det bare centreres
 }
@@ -351,7 +349,7 @@ input:nth-last-child(1) {
 
 //billede af tobias produktbillede
 .produktbillede.tobias {
-  background-image: url("../images/produktbilledeTobias.png");
+  background-image: url("../images/arbejdetobiasforside.png");
 }
 
 //Farven på knappen
@@ -373,12 +371,12 @@ input:nth-last-child(1) {
 
 //billede af amalie ansigt
 .ansigt.amalie {
-  background-image: url("../images/tobais.png");
+  background-image: url("../images/amalieforside.png");
 }
 
 //billede af amalie produktbillede
 .produktbillede.amalie {
-  background-image: url("../images/produktbilledeTobias.png");
+  background-image: url("../images/arbejdeamalieforside.png");
 }
 
 //Farven på knappen
@@ -400,12 +398,12 @@ input:nth-last-child(1) {
 
 //billede af tobias ansigt
 .ansigt.frederik {
-  background-image: url("../images/tobais.png");
+  background-image: url("../images/frederikforside.png");
 }
 
 //billede af tobias produktbillede
 .produktbillede.frederik {
-  background-image: url("../images/produktbilledeTobias.png");
+  background-image: url("../images/arbejdefrederikforside.png");
 }
 
 //Farven på knappen

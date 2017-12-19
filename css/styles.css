@@ -126,7 +126,6 @@ img {
 .logo {
   height: 300px;
   width: 300px;
-  border: solid white 6px;
   position: relative;
   top: 62%;
   margin: auto; }
@@ -203,7 +202,6 @@ input:nth-last-child(1) {
 
 .navnOverlay {
   position: absolute;
-  background-color: rgba(247, 216, 136, 0.8);
   top: 60%;
   left: 10%; }
 
@@ -244,7 +242,7 @@ input:nth-last-child(1) {
   background-image: url("../images/tobais.png"); }
 
 .produktbillede.tobias {
-  background-image: url("../images/produktbilledeTobias.png"); }
+  background-image: url("../images/arbejdetobiasforside.png"); }
 
 .knapFyld.showcase.tobias {
   background-color: #ace9e3; }
@@ -258,10 +256,10 @@ input:nth-last-child(1) {
   background-image: url("../images/tobiaskrymmel.png"); }
 
 .ansigt.amalie {
-  background-image: url("../images/tobais.png"); }
+  background-image: url("../images/amalieforside.png"); }
 
 .produktbillede.amalie {
-  background-image: url("../images/produktbilledeTobias.png"); }
+  background-image: url("../images/arbejdeamalieforside.png"); }
 
 .knapFyld.showcase.amalie {
   background-color: #ace9e3; }
@@ -275,10 +273,10 @@ input:nth-last-child(1) {
   background-image: url("../images/tobiaskrymmel.png"); }
 
 .ansigt.frederik {
-  background-image: url("../images/tobais.png"); }
+  background-image: url("../images/frederikforside.png"); }
 
 .produktbillede.frederik {
-  background-image: url("../images/produktbilledeTobias.png"); }
+  background-image: url("../images/arbejdefrederikforside.png"); }
 
 .knapFyld.showcase.frederik {
   background-color: #ace9e3; }

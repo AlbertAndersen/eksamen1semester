@@ -275,6 +275,10 @@ input:nth-last-child(1) {
   text-align: center;
 }
 
+.overlaytekst{ //baggrunden bag teksens størrelse, for færre forstyrrelser
+  padding-top:60px;
+}
+
 
 /*-------------------------------------------------------------------------
 ----------------------------------showcase-----------------------
@@ -343,7 +347,7 @@ input:nth-last-child(1) {
 .indhold.tobias {
   background-color: $color-yellow;
   grid-column: 1/13;
-  background-image: url("../images/tobiaskrymmel.png");
+  background-image: url("../images/tobiascirklerbg.png");
 }
 
 //billede af tobias ansigt
@@ -370,7 +374,7 @@ input:nth-last-child(1) {
 .indhold.amalie {
   background-color: $color-violet;
   grid-column: 1/13;
-  background-image: url("../images/tobiaskrymmel.png");
+  background-image: url("../images/amaliekrymmel.png");
 }
 
 //billede af amalie ansigt
@@ -397,7 +401,7 @@ input:nth-last-child(1) {
 .indhold.frederik {
   background-color: $color-pink;
   grid-column: 1/13;
-  background-image: url("../images/tobiaskrymmel.png");
+  background-image: url("../images/frederikkrymmel.png");
 }
 
 //billede af tobias ansigt
@@ -509,7 +513,7 @@ input:nth-last-child(1) {
 
 .baggrund2tobias{
   background-color: $color-yellow;
-  background-image: url("../images/tobiaskrymmel.png");
+  background-image: url("../images/tobiascirklerbg.png");
 }
 
 /*-------------------------------------------------------------------------
@@ -524,7 +528,7 @@ input:nth-last-child(1) {
 
 .baggrund2amalie{
   background-color: $color-violet;
-  background-image: url("../images/tobiaskrymmel.png");
+  background-image: url("../images/amaliekrymmel.png");
 }
 
 /*-------------------------------------------------------------------------
@@ -539,7 +543,7 @@ input:nth-last-child(1) {
 
 .baggrund2frederik{
   background-color: $color-pink;
-  background-image: url("../images/tobiaskrymmel.png");
+  background-image: url("../images/frederikkrymmel.png");
 }
 
 
@@ -752,6 +756,8 @@ input:nth-last-child(1) {
   position: fixed;
   top: 20px;
   right: 45px;
+  border:3px solid white;
+  border-radius:50%;
 }
 
 /* The Overlay (background) */

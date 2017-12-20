@@ -192,6 +192,9 @@ input:nth-last-child(1) {
   padding: 100px 0;
   text-align: center; }
 
+.overlaytekst {
+  padding-top: 60px; }
+
 /*-------------------------------------------------------------------------
 ----------------------------------showcase-----------------------
 ---------------------------------------------------------------------------*/
@@ -239,7 +242,7 @@ input:nth-last-child(1) {
 .indhold.tobias {
   background-color: #f7d888;
   grid-column: 1/13;
-  background-image: url("../images/tobiaskrymmel.png"); }
+  background-image: url("../images/tobiascirklerbg.png"); }
 
 .ansigt.tobias {
   background-image: url("../images/tobais.png"); }
@@ -256,7 +259,7 @@ input:nth-last-child(1) {
 .indhold.amalie {
   background-color: #9195f1;
   grid-column: 1/13;
-  background-image: url("../images/tobiaskrymmel.png"); }
+  background-image: url("../images/amaliekrymmel.png"); }
 
 .ansigt.amalie {
   background-image: url("../images/amalieforside.png"); }
@@ -273,7 +276,7 @@ input:nth-last-child(1) {
 .indhold.frederik {
   background-color: #ebb3df;
   grid-column: 1/13;
-  background-image: url("../images/tobiaskrymmel.png"); }
+  background-image: url("../images/frederikkrymmel.png"); }
 
 .ansigt.frederik {
   background-image: url("../images/frederikforside.png"); }
@@ -353,7 +356,7 @@ input:nth-last-child(1) {
 
 .baggrund2tobias {
   background-color: #f7d888;
-  background-image: url("../images/tobiaskrymmel.png"); }
+  background-image: url("../images/tobiascirklerbg.png"); }
 
 /*-------------------------------------------------------------------------
 ----------------------------------Amalie------------------------
@@ -363,7 +366,7 @@ input:nth-last-child(1) {
 
 .baggrund2amalie {
   background-color: #9195f1;
-  background-image: url("../images/tobiaskrymmel.png"); }
+  background-image: url("../images/amaliekrymmel.png"); }
 
 /*-------------------------------------------------------------------------
 ----------------------------------Frederik------------------------
@@ -373,7 +376,7 @@ input:nth-last-child(1) {
 
 .baggrund2frederik {
   background-color: #ebb3df;
-  background-image: url("../images/tobiaskrymmel.png"); }
+  background-image: url("../images/frederikkrymmel.png"); }
 
 /*================Responsivitet===============*/
 @media screen and (min-width: 600px) {
@@ -513,7 +516,9 @@ input:nth-last-child(1) {
   z-index: 2;
   position: fixed;
   top: 20px;
-  right: 45px; }
+  right: 45px;
+  border: 3px solid white;
+  border-radius: 50%; }
 
 /* The Overlay (background) */
 .overlay {

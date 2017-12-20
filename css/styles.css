@@ -128,7 +128,8 @@ img {
   width: 300px;
   position: relative;
   top: 62%;
-  margin: auto; }
+  margin: auto;
+  z-index: 100; }
 
 /*================KONTAKT FORM===============*/
 input {
@@ -356,6 +357,24 @@ input:nth-last-child(1) {
 
 .baggrund2tobias {
   background-color: #f7d888;
+  background-image: url("../images/tobiascirklerbg.png");
+  padding: 0 0 200px 0; }
+
+.tobiasarbejde {
+  background-color: #ace9e3; }
+
+.tobiasarbejde1 {
+  clip-path: ellipse(50% 15% at 50% 0%);
+  height: 500px;
+  background-color: #f7d888;
+  margin-bottom: -400px;
+  background-image: url("../images/tobiascirklerbg.png"); }
+
+.tobiasarbejde2 {
+  clip-path: ellipse(50% 15% at 50% 100%);
+  height: 700px;
+  background-color: #f7d888;
+  margin-top: -500px;
   background-image: url("../images/tobiascirklerbg.png"); }
 
 /*-------------------------------------------------------------------------
@@ -366,7 +385,24 @@ input:nth-last-child(1) {
 
 .baggrund2amalie {
   background-color: #9195f1;
+  background-image: url("../images/amaliekrymmel.png");
+  padding: 0 0 100px 0; }
+
+.omamalie {
+  clip-path: polygon(100% 0, 100% 92%, 65% 100%, 0 95%, 0 0); }
+
+.amaliearbejde {
+  clip-path: polygon(100% 0, 100% 100%, 34% 95%, 0 100%, 0 0); }
+
+.amaliebund {
+  padding-bottom: 50px; }
+
+.bgtilclipviolet {
+  background-color: #9195f1;
   background-image: url("../images/amaliekrymmel.png"); }
+
+.bgtilclipblue {
+  background-color: #ace9e3; }
 
 /*-------------------------------------------------------------------------
 ----------------------------------Frederik------------------------
@@ -378,7 +414,26 @@ input:nth-last-child(1) {
   background-color: #ebb3df;
   background-image: url("../images/frederikkrymmel.png"); }
 
+.frederikarbejde {
+  clip-path: polygon(0 0, 100% 0, 100% 97%, 0% 100%); }
+
+.omfrederik {
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 95%); }
+
+.bgtilclippink {
+  background-color: #ebb3df;
+  background-image: url("../images/frederikkrymmel.png"); }
+
+.frederikbund {
+  padding-bottom: 200px; }
+
 /*================Responsivitet===============*/
+@media screen and (min-width: 500px) {
+  .frederikarbejde {
+    clip-path: polygon(0 0, 100% 0, 100% 95%, 0% 100%); }
+
+  .frederikbund {
+    padding-bottom: 100px; } }
 @media screen and (min-width: 600px) {
   /*================Forside===============*/
   /*================Showcase===============*/
@@ -476,7 +531,42 @@ input:nth-last-child(1) {
     padding: 0px 50px 50px 0; }
 
   .baggrundtobias {
-    padding: 300px 0px 100px 0px; } }
+    padding: 300px 0px 100px 0px; }
+
+  .tobiasarbejde1 {
+    clip-path: ellipse(50% 25% at 50% 0%);
+    height: 700px;
+    background-color: #f7d888;
+    margin-bottom: -500px;
+    background-image: url("../images/tobiascirklerbg.png"); }
+
+  .tobiasarbejde2 {
+    clip-path: ellipse(50% 25% at 50% 100%);
+    height: 700px;
+    background-color: #f7d888;
+    margin-top: -500px;
+    background-image: url("../images/tobiascirklerbg.png"); }
+
+  .baggrund2tobias {
+    padding: 0; }
+
+  .omamalie {
+    clip-path: polygon(100% 0, 100% 81%, 65% 100%, 0 83%, 0 0); }
+
+  .amaliearbejde {
+    clip-path: polygon(100% 0, 100% 100%, 34% 87%, 0 100%, 0 0); }
+
+  .amaliebund {
+    padding-bottom: 200px; }
+
+  .frederikarbejde {
+    clip-path: polygon(0 0, 100% 0, 100% 90%, 0% 100%); }
+
+  .omfrederik {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 90%); }
+
+  .frederikbund {
+    padding-bottom: 0; } }
 @media screen and (min-width: 835px) {
   h3 {
     font-size: 18px;

@@ -182,8 +182,8 @@ $color-violet: #9195f1;
   width: 300px;
   position: relative;
   top: 62%;
-  margin: auto
-
+  margin: auto;
+  z-index: 100;
 }
 
 
@@ -455,6 +455,7 @@ input:nth-last-child(1) {
   font-family: Arial;
   font-size: 100%;
 }
+
 /*========================================================================
  ==============================Personlige sider===========================
 =========================================================================*/
@@ -514,7 +515,29 @@ input:nth-last-child(1) {
 .baggrund2tobias{
   background-color: $color-yellow;
   background-image: url("../images/tobiascirklerbg.png");
+  padding:0 0 200px 0 ;//giver kanten (clip-path) lidt mere plads
 }
+.tobiasarbejde{//gør at farven bag clip-path er mint
+  background-color: $color-blue;
+}
+
+.tobiasarbejde1{//nederste halvcirkel clip-path
+  clip-path: ellipse(50% 15% at 50% 0%);
+  height:500px;
+  background-color: $color-yellow;
+  margin-bottom:-400px;
+  background-image: url("../images/tobiascirklerbg.png");
+}
+
+.tobiasarbejde2{//øverste halvcirkel clip-path
+  clip-path: ellipse(50% 15% at 50% 100%);
+  height:700px;
+  background-color: $color-yellow;
+  margin-top:-500px;
+  background-image: url("../images/tobiascirklerbg.png");
+}
+
+
 
 /*-------------------------------------------------------------------------
 ----------------------------------Amalie------------------------
@@ -529,6 +552,28 @@ input:nth-last-child(1) {
 .baggrund2amalie{
   background-color: $color-violet;
   background-image: url("../images/amaliekrymmel.png");
+  padding:0 0 100px 0 ;//giver kanten (clip-path) lidt mere plads
+}
+
+.omamalie{//øverste kant
+  clip-path: polygon(100% 0, 100% 92%, 65% 100%, 0 95%, 0 0);
+}
+
+.amaliearbejde{//nederste kant
+  clip-path: polygon(100% 0, 100% 100%, 34% 95%, 0 100%, 0 0);
+}
+
+.amaliebund{//giver plads under billedet af hensyn til kanten (clip-path)
+  padding-bottom:50px;
+}
+
+.bgtilclipviolet{//gør baggrunden bag clip-path lilla
+  background-color: $color-violet;
+  background-image: url("../images/amaliekrymmel.png");
+}
+
+.bgtilclipblue{//gør baggrunden bag clip-path mint
+  background-color: $color-blue;
 }
 
 /*-------------------------------------------------------------------------
@@ -546,10 +591,32 @@ input:nth-last-child(1) {
   background-image: url("../images/frederikkrymmel.png");
 }
 
+.frederikarbejde { //nederste skrå kant
+  clip-path: polygon(0 0, 100% 0, 100% 97%, 0% 100%);
+}
+.omfrederik {//øverste skrå kant
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 95%);
+}
+
+.bgtilclippink{
+  background-color: $color-pink;
+  background-image: url("../images/frederikkrymmel.png");
+}
+
+.frederikbund{
+  padding-bottom: 200px;
+}
 
 /*================Responsivitet===============*/
 
-
+@media screen and (min-width: 500px) {
+  .frederikarbejde {//nederste skrå kant
+    clip-path: polygon(0 0, 100% 0, 100% 95%, 0% 100%);
+  }
+  .frederikbund{
+    padding-bottom: 100px;
+  }
+}
 
 @media screen and (min-width: 600px) {
   // Alt over 600. Tablet og Desktop
@@ -680,6 +747,52 @@ input:nth-last-child(1) {
     padding: 300px 0px 100px 0px;
   }
 
+  .tobiasarbejde1{//nederste halvcirkel clip-path
+    clip-path: ellipse(50% 25% at 50% 0%);
+    height:700px;
+    background-color: $color-yellow;
+    margin-bottom:-500px;
+    background-image: url("../images/tobiascirklerbg.png");
+  }
+
+  .tobiasarbejde2{//øverste halvcirkel clip-path
+    clip-path: ellipse(50% 25% at 50% 100%);
+    height:700px;
+    background-color: $color-yellow;
+    margin-top:-500px;
+    background-image: url("../images/tobiascirklerbg.png");
+  }
+
+  .baggrund2tobias{
+    padding:0;
+  }
+
+  //Amalie
+
+  .omamalie{//øverste kant
+    clip-path: polygon(100% 0, 100% 81%, 65% 100%, 0 83%, 0 0);
+  }
+
+  .amaliearbejde{//nederste kant
+    clip-path: polygon(100% 0, 100% 100%, 34% 87%, 0 100%, 0 0);
+  }
+
+  .amaliebund{//giver plads under billedet af hensyn til kanten (clip-path)
+    padding-bottom:200px;
+  }
+
+  //Frederik
+
+  .frederikarbejde {//nederste skrå kant
+    clip-path: polygon(0 0, 100% 0, 100% 90%, 0% 100%);
+  }
+
+  .omfrederik {//øverste skrå kant
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 90%);
+  }
+  .frederikbund{
+    padding-bottom:0;
+  }
 
 
 

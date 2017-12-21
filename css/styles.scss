@@ -180,11 +180,10 @@ $color-violet: #9195f1;
 .logo { // placeholder for logoet
   height: 300px;
   width: 300px;
-  border: solid white 6px;
   position: relative;
   top: 62%;
-  margin: auto
-
+  margin: auto;
+  z-index: 100;
 }
 
 
@@ -238,6 +237,10 @@ input:nth-last-child(1) {
   padding: 50px 0;
 }
 
+.some a{
+  color:#fff;
+}
+
 // gør ordert "eller" mindre og giver det lidt plads
 .eller {
   padding: 100px 0px;
@@ -272,6 +275,10 @@ input:nth-last-child(1) {
   text-align: center;
 }
 
+.overlaytekst{ //baggrunden bag teksens størrelse, for færre forstyrrelser
+  padding-top:60px;
+}
+
 
 /*-------------------------------------------------------------------------
 ----------------------------------showcase-----------------------
@@ -292,7 +299,6 @@ input:nth-last-child(1) {
 //Navn overlay placeres ved brug af absolute position og top/left
 .navnOverlay {
   position: absolute;
-  background-color: rgba(247, 216, 136, 0.8); //farven på overlay med gennemsigtighed
   top: 60%;
   left: 10%; //måske skal det bare centreres
 }
@@ -341,7 +347,7 @@ input:nth-last-child(1) {
 .indhold.tobias {
   background-color: $color-yellow;
   grid-column: 1/13;
-  background-image: url("../images/tobiaskrymmel.png");
+  background-image: url("../images/tobiascirklerbg.png");
 }
 
 //billede af tobias ansigt
@@ -351,7 +357,7 @@ input:nth-last-child(1) {
 
 //billede af tobias produktbillede
 .produktbillede.tobias {
-  background-image: url("../images/produktbilledeTobias.png");
+  background-image: url("../images/arbejdetobiasforside.png");
 }
 
 //Farven på knappen
@@ -368,17 +374,17 @@ input:nth-last-child(1) {
 .indhold.amalie {
   background-color: $color-violet;
   grid-column: 1/13;
-  background-image: url("../images/tobiaskrymmel.png");
+  background-image: url("../images/amaliekrymmel.png");
 }
 
 //billede af amalie ansigt
 .ansigt.amalie {
-  background-image: url("../images/tobais.png");
+  background-image: url("../images/amalieforside.png");
 }
 
 //billede af amalie produktbillede
 .produktbillede.amalie {
-  background-image: url("../images/produktbilledeTobias.png");
+  background-image: url("../images/arbejdeamalieforside.png");
 }
 
 //Farven på knappen
@@ -395,17 +401,17 @@ input:nth-last-child(1) {
 .indhold.frederik {
   background-color: $color-pink;
   grid-column: 1/13;
-  background-image: url("../images/tobiaskrymmel.png");
+  background-image: url("../images/frederikkrymmel.png");
 }
 
 //billede af tobias ansigt
 .ansigt.frederik {
-  background-image: url("../images/tobais.png");
+  background-image: url("../images/frederikforside.png");
 }
 
 //billede af tobias produktbillede
 .produktbillede.frederik {
-  background-image: url("../images/produktbilledeTobias.png");
+  background-image: url("../images/arbejdefrederikforside.png");
 }
 
 //Farven på knappen
@@ -449,6 +455,7 @@ input:nth-last-child(1) {
   font-family: Arial;
   font-size: 100%;
 }
+
 /*========================================================================
  ==============================Personlige sider===========================
 =========================================================================*/
@@ -507,8 +514,30 @@ input:nth-last-child(1) {
 
 .baggrund2tobias{
   background-color: $color-yellow;
-  background-image: url("../images/tobiaskrymmel.png");
+  background-image: url("../images/tobiascirklerbg.png");
+  padding:0 0 200px 0 ;//giver kanten (clip-path) lidt mere plads
 }
+.tobiasarbejde{//gør at farven bag clip-path er mint
+  background-color: $color-blue;
+}
+
+.tobiasarbejde1{//nederste halvcirkel clip-path
+  clip-path: ellipse(50% 15% at 50% 0%);
+  height:500px;
+  background-color: $color-yellow;
+  margin-bottom:-400px;
+  background-image: url("../images/tobiascirklerbg.png");
+}
+
+.tobiasarbejde2{//øverste halvcirkel clip-path
+  clip-path: ellipse(50% 15% at 50% 100%);
+  height:700px;
+  background-color: $color-yellow;
+  margin-top:-500px;
+  background-image: url("../images/tobiascirklerbg.png");
+}
+
+
 
 /*-------------------------------------------------------------------------
 ----------------------------------Amalie------------------------
@@ -522,7 +551,29 @@ input:nth-last-child(1) {
 
 .baggrund2amalie{
   background-color: $color-violet;
-  background-image: url("../images/tobiaskrymmel.png");
+  background-image: url("../images/amaliekrymmel.png");
+  padding:0 0 100px 0 ;//giver kanten (clip-path) lidt mere plads
+}
+
+.omamalie{//øverste kant
+  clip-path: polygon(100% 0, 100% 92%, 65% 100%, 0 95%, 0 0);
+}
+
+.amaliearbejde{//nederste kant
+  clip-path: polygon(100% 0, 100% 100%, 34% 95%, 0 100%, 0 0);
+}
+
+.amaliebund{//giver plads under billedet af hensyn til kanten (clip-path)
+  padding-bottom:50px;
+}
+
+.bgtilclipviolet{//gør baggrunden bag clip-path lilla
+  background-color: $color-violet;
+  background-image: url("../images/amaliekrymmel.png");
+}
+
+.bgtilclipblue{//gør baggrunden bag clip-path mint
+  background-color: $color-blue;
 }
 
 /*-------------------------------------------------------------------------
@@ -537,13 +588,35 @@ input:nth-last-child(1) {
 
 .baggrund2frederik{
   background-color: $color-pink;
-  background-image: url("../images/tobiaskrymmel.png");
+  background-image: url("../images/frederikkrymmel.png");
 }
 
+.frederikarbejde { //nederste skrå kant
+  clip-path: polygon(0 0, 100% 0, 100% 97%, 0% 100%);
+}
+.omfrederik {//øverste skrå kant
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 95%);
+}
+
+.bgtilclippink{
+  background-color: $color-pink;
+  background-image: url("../images/frederikkrymmel.png");
+}
+
+.frederikbund{
+  padding-bottom: 200px;
+}
 
 /*================Responsivitet===============*/
 
-
+@media screen and (min-width: 500px) {
+  .frederikarbejde {//nederste skrå kant
+    clip-path: polygon(0 0, 100% 0, 100% 95%, 0% 100%);
+  }
+  .frederikbund{
+    padding-bottom: 100px;
+  }
+}
 
 @media screen and (min-width: 600px) {
   // Alt over 600. Tablet og Desktop
@@ -674,6 +747,52 @@ input:nth-last-child(1) {
     padding: 300px 0px 100px 0px;
   }
 
+  .tobiasarbejde1{//nederste halvcirkel clip-path
+    clip-path: ellipse(50% 25% at 50% 0%);
+    height:700px;
+    background-color: $color-yellow;
+    margin-bottom:-500px;
+    background-image: url("../images/tobiascirklerbg.png");
+  }
+
+  .tobiasarbejde2{//øverste halvcirkel clip-path
+    clip-path: ellipse(50% 25% at 50% 100%);
+    height:700px;
+    background-color: $color-yellow;
+    margin-top:-500px;
+    background-image: url("../images/tobiascirklerbg.png");
+  }
+
+  .baggrund2tobias{
+    padding:0;
+  }
+
+  //Amalie
+
+  .omamalie{//øverste kant
+    clip-path: polygon(100% 0, 100% 81%, 65% 100%, 0 83%, 0 0);
+  }
+
+  .amaliearbejde{//nederste kant
+    clip-path: polygon(100% 0, 100% 100%, 34% 87%, 0 100%, 0 0);
+  }
+
+  .amaliebund{//giver plads under billedet af hensyn til kanten (clip-path)
+    padding-bottom:200px;
+  }
+
+  //Frederik
+
+  .frederikarbejde {//nederste skrå kant
+    clip-path: polygon(0 0, 100% 0, 100% 90%, 0% 100%);
+  }
+
+  .omfrederik {//øverste skrå kant
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 90%);
+  }
+  .frederikbund{
+    padding-bottom:0;
+  }
 
 
 
@@ -750,7 +869,12 @@ input:nth-last-child(1) {
   position: fixed;
   top: 20px;
   right: 45px;
+  border:3px solid white;
+  border-radius:50%;
+  height:80px;
+  width:80px;
 }
+
 
 /* The Overlay (background) */
 .overlay {

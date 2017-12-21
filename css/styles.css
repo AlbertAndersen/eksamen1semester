@@ -63,7 +63,9 @@ img {
 .dropshadow {
   box-shadow: -18px 18px 41px -18px rgba(0, 0, 0, 0.28); }
 
+
 /*Lavet af: Christina*/
+
 .overlayyellow {
   background-color: rgba(247, 216, 136, 0.8); }
 
@@ -367,7 +369,9 @@ input:nth-last-child(1) {
 /*-------------------------------------------------------------------------
 ----------------------------------TOBIAS------------------------
 ---------------------------------------------------------------------------*/
+
 /*Lavet af: Anne, Christina*/
+
 .baggrundtobias {
   background-color: #ace9e3; }
 
@@ -396,7 +400,9 @@ input:nth-last-child(1) {
 /*-------------------------------------------------------------------------
 ----------------------------------Amalie------------------------
 ---------------------------------------------------------------------------*/
-/*Lavet af: Christina*/
+
+/*Lavet af: Chtistina*/
+
 .header.amalieheader {
   background-color: #9195f1; }
 
@@ -424,7 +430,9 @@ input:nth-last-child(1) {
 /*-------------------------------------------------------------------------
 ----------------------------------Frederik------------------------
 ---------------------------------------------------------------------------*/
+
 /*Lavet af: Christina*/
+
 .header.frederikheader {
   background-color: #ebb3df; }
 
@@ -553,6 +561,7 @@ input:nth-last-child(1) {
   .baggrundtobias {
     padding: 300px 0px 100px 0px; }
 
+  /*Lavet af: Chtistina*/
   .tobiasarbejde1 {
     clip-path: ellipse(50% 25% at 50% 0%);
     height: 700px;
@@ -570,7 +579,9 @@ input:nth-last-child(1) {
   .baggrund2tobias {
     padding: 0; }
 
+
   /*Lavet af: Christina*/
+
   .omamalie {
     clip-path: polygon(100% 0, 100% 81%, 65% 100%, 0 83%, 0 0); }
 
@@ -580,7 +591,9 @@ input:nth-last-child(1) {
   .amaliebund {
     padding-bottom: 200px; }
 
+
   /*Lavet af: Christina*/
+
   .frederikarbejde {
     clip-path: polygon(0 0, 100% 0, 100% 90%, 0% 100%); }
 

@@ -8,6 +8,7 @@
 /*========================================================================
  ==============================Generelt====================================
 =========================================================================*/
+/*Lavet af: Albert*/
 @font-face {
   font-family: odin;
   font-weight: 100;
@@ -53,6 +54,7 @@ img {
   max-width: 100%;
   height: auto; }
 
+/*Lavet af: Albert*/
 .grid {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
@@ -61,6 +63,7 @@ img {
 .dropshadow {
   box-shadow: -18px 18px 41px -18px rgba(0, 0, 0, 0.28); }
 
+/*Lavet af: ?*/
 .overlayyellow {
   background-color: rgba(247, 216, 136, 0.8); }
 
@@ -74,6 +77,7 @@ img {
   background-color: rgba(145, 149, 241, 0.8); }
 
 /*================knappen================*/
+/*Lavet af: Albert*/
 .flex {
   display: flex;
   justify-content: center; }
@@ -115,6 +119,7 @@ img {
 ----------------------------------Header & footer-----------------------
 ---------------------------------------------------------------------------*/
 /*================HEADER===============*/
+/*Lavet af: Albert*/
 .header {
   height: 400px;
   background-image: none;
@@ -132,6 +137,7 @@ img {
   z-index: 100; }
 
 /*================KONTAKT FORM===============*/
+/*Lavet af: Albert*/
 input {
   margin: 20px 0px;
   grid-column: 3/11;
@@ -146,6 +152,7 @@ input:nth-last-child(1) {
   height: 100px; }
 
 /*================footer===============*/
+/*Lavet af: Albert*/
 .sendknap {
   margin-top: 75px; }
 
@@ -176,6 +183,7 @@ input:nth-last-child(1) {
 /*========================================================================
  ==============================FORSIDE====================================
 =========================================================================*/
+/*Lavet af: Albert*/
 /*================kollektiv===============*/
 .kollektiv h1 {
   grid-column: 1/13; }
@@ -199,6 +207,7 @@ input:nth-last-child(1) {
 /*-------------------------------------------------------------------------
 ----------------------------------showcase-----------------------
 ---------------------------------------------------------------------------*/
+/*Lavet af: Albert*/
 .firkant {
   height: 100vw;
   background-size: cover;
@@ -221,6 +230,7 @@ input:nth-last-child(1) {
   grid-column: 2/12; }
 
 /*====showcases knap===*/
+/*Lavet af: Albert*/
 .showcaseKnap {
   grid-row: 3;
   grid-column: 1/13;
@@ -240,6 +250,7 @@ input:nth-last-child(1) {
 /*-------------------------------------------------------------------------
 ----------------------------------Tobias showcase------------------------
 ---------------------------------------------------------------------------*/
+/*Lavet af: Albert*/
 .indhold.tobias {
   background-color: #f7d888;
   grid-column: 1/13;
@@ -257,6 +268,7 @@ input:nth-last-child(1) {
 /*-------------------------------------------------------------------------
 ----------------------------------Amalie showcase-----------------------
 ---------------------------------------------------------------------------*/
+/*Lavet af: Albert*/
 .indhold.amalie {
   background-color: #9195f1;
   grid-column: 1/13;
@@ -274,6 +286,7 @@ input:nth-last-child(1) {
 /*-------------------------------------------------------------------------
 ----------------------------------Frederik Showcase-----------------------
 ---------------------------------------------------------------------------*/
+/*Lavet af: Albert*/
 .indhold.frederik {
   background-color: #ebb3df;
   grid-column: 1/13;
@@ -289,6 +302,7 @@ input:nth-last-child(1) {
   background-color: #ace9e3; }
 
 /*================KONTRAST==============*/
+/*Lavet af: Aisha, Albert*/
 .kontrastBG {
   background-color: #ebb3df; }
 
@@ -318,6 +332,7 @@ input:nth-last-child(1) {
 /*========================================================================
  ==============================Personlige sider===========================
 =========================================================================*/
+/*Lavet af: Anne*/
 .hvemerjeg {
   grid-column: 1/13;
   margin-top: 200px; }
@@ -352,6 +367,7 @@ input:nth-last-child(1) {
 /*-------------------------------------------------------------------------
 ----------------------------------TOBIAS------------------------
 ---------------------------------------------------------------------------*/
+/*Lavet af: ??*/
 .baggrundtobias {
   background-color: #ace9e3; }
 
@@ -380,6 +396,7 @@ input:nth-last-child(1) {
 /*-------------------------------------------------------------------------
 ----------------------------------Amalie------------------------
 ---------------------------------------------------------------------------*/
+/*Lavet af: ??*/
 .header.amalieheader {
   background-color: #9195f1; }
 
@@ -407,6 +424,7 @@ input:nth-last-child(1) {
 /*-------------------------------------------------------------------------
 ----------------------------------Frederik------------------------
 ---------------------------------------------------------------------------*/
+/*Lavet af: ??*/
 .header.frederikheader {
   background-color: #ebb3df; }
 
@@ -437,6 +455,7 @@ input:nth-last-child(1) {
 @media screen and (min-width: 600px) {
   /*================Forside===============*/
   /*================Showcase===============*/
+  /*Lavet af: Albert*/
   .showcaseFlexamalie {
     display: flex;
     flex-direction: row-reverse; }
@@ -461,6 +480,7 @@ input:nth-last-child(1) {
     padding: 30px 20px 30px 20px; }
 
   /*================Personlige sider===============*/
+  /*Lavet af: Albert*/
   .arbejde1 {
     grid-column: 2/8; }
 
@@ -550,6 +570,7 @@ input:nth-last-child(1) {
   .baggrund2tobias {
     padding: 0; }
 
+  /*Lavet af:??*/
   .omamalie {
     clip-path: polygon(100% 0, 100% 81%, 65% 100%, 0 83%, 0 0); }
 
@@ -559,6 +580,7 @@ input:nth-last-child(1) {
   .amaliebund {
     padding-bottom: 200px; }
 
+  /*Lavet af: ??*/
   .frederikarbejde {
     clip-path: polygon(0 0, 100% 0, 100% 90%, 0% 100%); }
 
@@ -602,6 +624,7 @@ input:nth-last-child(1) {
   .overlay2 {
     left: -100px; } }
 /*================BURGER MENU===============*/
+/*Lavet af: ikke os*/
 .hamburger {
   z-index: 2;
   position: fixed;

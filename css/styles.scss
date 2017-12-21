@@ -19,6 +19,7 @@
 /*========================================================================
  ==============================Generelt====================================
 =========================================================================*/
+/*Lavet af: Albert*/
 @font-face { //Definere fonten odin, så vi kan bruge den
   font-family: odin;
   font-weight: 100;
@@ -76,7 +77,7 @@ img {
   max-width: 100%; // Bredde mÂ maks fylde 100%
   height: auto; // H¯jden skal tilpasse sig
 }
-
+/*Lavet af: Albert*/
 //Farve variabler
 $color-yellow: #f7d888;
 $color-blue: #ace9e3;
@@ -94,7 +95,7 @@ $color-violet: #9195f1;
 .dropshadow {
   box-shadow: -18px 18px 41px -18px rgba(0,0,0,0.28);
 }
-
+/*Lavet af: ?*/
 //overlay med farverne og gennemsigtighed, så tekst er mere synligt ved krymmel
 .overlayyellow {
   background-color: rgba(247,216,136,0.8);
@@ -111,7 +112,7 @@ $color-violet: #9195f1;
 
 
 /*================knappen================*/
-
+/*Lavet af: Albert*/
 //knappen, som er virkelig dårlig lavet, men den virker
 //har givet den en sektion for sig selv
 
@@ -167,7 +168,7 @@ $color-violet: #9195f1;
 ---------------------------------------------------------------------------*/
 
 /*================HEADER===============*/
-
+/*Lavet af: Albert*/
 .header { //farve og længde på header sektionen
   height: 400px; // Højden på headeren. Hvis denne ændres skal .logo { top } også ændres
   background-image: none; // her skal der være et billede
@@ -188,7 +189,7 @@ $color-violet: #9195f1;
 
 
 /*================KONTAKT FORM===============*/
-
+/*Lavet af: Albert*/
 //Styling af input fælter
 input {
   margin: 20px 0px; // Giver lidt plads mellem felter
@@ -208,7 +209,7 @@ input:nth-last-child(1) {
 
 
 /*================footer===============*/
-
+/*Lavet af: Albert*/
 //giver lidt plads til send knappen
 .sendknap {
   margin-top: 75px;
@@ -250,7 +251,7 @@ input:nth-last-child(1) {
 /*========================================================================
  ==============================FORSIDE====================================
 =========================================================================*/
-
+/*Lavet af: Albert*/
 //alt styling der kun er på forsiden
 
 /*================kollektiv===============*/
@@ -283,7 +284,7 @@ input:nth-last-child(1) {
 /*-------------------------------------------------------------------------
 ----------------------------------showcase-----------------------
 ---------------------------------------------------------------------------*/
-
+/*Lavet af: Albert*/
 //Gør at billeder i showcase er fikantet(på mobil)
 .firkant {
   height: 100vw; //sætter højden = med breden på skærmen. Dette gør at de er fikantet
@@ -316,6 +317,7 @@ input:nth-last-child(1) {
 }
 
 /*====showcases knap===*/
+/*Lavet af: Albert*/
 //Dette skal ikke ændres!!!!
 
 .showcaseKnap {
@@ -341,6 +343,7 @@ input:nth-last-child(1) {
 /*-------------------------------------------------------------------------
 ----------------------------------Tobias showcase------------------------
 ---------------------------------------------------------------------------*/
+/*Lavet af: Albert*/
 //Alt hvad der er anderledes i tobiases showcase
 
 //farve og krymmel bag indhold
@@ -368,6 +371,7 @@ input:nth-last-child(1) {
 /*-------------------------------------------------------------------------
 ----------------------------------Amalie showcase-----------------------
 ---------------------------------------------------------------------------*/
+/*Lavet af: Albert*/
 //Alt hvad der er anderledes i amalies showcase
 
 //farve og krymmel bag indhold
@@ -395,6 +399,7 @@ input:nth-last-child(1) {
 /*-------------------------------------------------------------------------
 ----------------------------------Frederik Showcase-----------------------
 ---------------------------------------------------------------------------*/
+/*Lavet af: Albert*/
 //Alt hvad der er anderledes i Frederiks showcase
 
 //farve og krymmel bag indhold
@@ -421,6 +426,7 @@ input:nth-last-child(1) {
 
 
 /*================KONTRAST==============*/
+/*Lavet af: Aisha, Albert*/
 
 .kontrastBG {
   background-color: $color-pink;
@@ -459,6 +465,7 @@ input:nth-last-child(1) {
 /*========================================================================
  ==============================Personlige sider===========================
 =========================================================================*/
+/*Lavet af: Anne*/
 
 //Her står alt som de personlige sider har tilfælles
 
@@ -505,7 +512,7 @@ input:nth-last-child(1) {
 /*-------------------------------------------------------------------------
 ----------------------------------TOBIAS------------------------
 ---------------------------------------------------------------------------*/
-
+/*Lavet af: ??*/
 //Her står alt som kun er på tobiases side
 
 .baggrundtobias{
@@ -542,7 +549,7 @@ input:nth-last-child(1) {
 /*-------------------------------------------------------------------------
 ----------------------------------Amalie------------------------
 ---------------------------------------------------------------------------*/
-
+/*Lavet af: ??*/
 //Her står alt som kun er på Amalies side
 
 .header.amalieheader{
@@ -579,7 +586,7 @@ input:nth-last-child(1) {
 /*-------------------------------------------------------------------------
 ----------------------------------Frederik------------------------
 ---------------------------------------------------------------------------*/
-
+/*Lavet af: ??*/
 //Her står alt som kun er på Frederiks side
 
 .header.frederikheader{
@@ -624,6 +631,7 @@ input:nth-last-child(1) {
   /*================Forside===============*/
 
   /*================Showcase===============*/
+  /*Lavet af: Albert*/
 
   //Mangler kommentar. Værdier skal tweakes så de det passer bedre
   .showcaseFlexamalie{ //gør at Amalies showcase på forsiden står omvnedt (billeder i højre side)
@@ -656,6 +664,7 @@ input:nth-last-child(1) {
   }
 
   /*================Personlige sider===============*/
+  /*Lavet af: Albert*/
   //Tobias
 
   .arbejde1 {
@@ -768,6 +777,7 @@ input:nth-last-child(1) {
   }
 
   //Amalie
+  /*Lavet af:??*/
 
   .omamalie{//øverste kant
     clip-path: polygon(100% 0, 100% 81%, 65% 100%, 0 83%, 0 0);
@@ -782,6 +792,7 @@ input:nth-last-child(1) {
   }
 
   //Frederik
+  /*Lavet af: ??*/
 
   .frederikarbejde {//nederste skrå kant
     clip-path: polygon(0 0, 100% 0, 100% 90%, 0% 100%);
@@ -863,6 +874,7 @@ input:nth-last-child(1) {
 
 /*================BURGER MENU===============*/
 // den ligger i bunden fordi den fylder meget, og ikke skal ændres på :)
+/*Lavet af: ikke os*/
 
 .hamburger{
   z-index: 2;

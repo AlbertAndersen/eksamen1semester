@@ -497,7 +497,7 @@ input:nth-last-child(1) {
 .arbejde1, .arbejde2, .arbejde3{
   grid-column: 3/11;
   position: relative; //så billedet er nederst
-  margin-bottom: 65%;
+  margin-bottom: 62%;
 }
 
 .overlay1, .overlay2, .overlay3{
@@ -623,6 +623,7 @@ input:nth-last-child(1) {
   .frederikbund{
     padding-bottom: 100px;
   }
+
 }
 
 @media screen and (min-width: 600px) {
